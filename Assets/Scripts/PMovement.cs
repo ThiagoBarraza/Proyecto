@@ -4,24 +4,26 @@ using UnityEngine;
 
 public class PMovement : MonoBehaviour
 {
-    public float ZSpeed;
-    public float XSpeed;
-    public float RSpeed;
-    public int maxJumps;
-    public float JumpForce;
-    //public CollisionTest ColT;
-    public int hasJump;
-    public bool Salto = false;
-    public int vidas;
-    public int NroVidas;
-    Rigidbody rb;
-    int Amongquantity = 0;
+    
+    
+    //Variables
+    
+    public float ZSpeed; //Moving forward speed
+    public float XSpeed; //Moving backwards speed
+    public int maxJumps; //Set this to one, might get deleted
+    public float JumpForce; //How much does the player jump, might get deleted
+    public int hasJump; //can the player jump?, might get deleted
+    public bool Salto = false; //can the player jump?, might get deleted
+    public int vidas; //Player lives, might get reworked
+    public int NroVidas; //Amount of lives, will get reworked
+    
+    
 
     //Resources
 
-    public GameObject Amogus1;
-    public GameObject Amogus2;
-    public GameObject Amogus3;
+    Rigidbody rb;
+    public CameraTest CT;
+    public GameObject Model;
 
     // Start is called before the first frame update
     void Start()
@@ -33,30 +35,23 @@ public class PMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        CT = FindObjectOfType<CameraTest>();
+        
         if (Input.GetKey(KeyCode.W))
         {
             transform.Translate(0, 0, ZSpeed * .2f);
         }
         if (Input.GetKey(KeyCode.S))
         {
-            transform.Translate(0, 0, -ZSpeed * .1f);
+            transform.Translate(0, 0, -ZSpeed * .2f);
         }
         if (Input.GetKey(KeyCode.D))
         {
-            transform.Translate(XSpeed * .1f, 0, 0);
+            transform.Translate(XSpeed * .2f, 0, 0);
         }
         if (Input.GetKey(KeyCode.A))
         {
-            transform.Translate(-XSpeed * .1f, 0, 0);
-        }
-
-        if (Input.GetKey(KeyCode.E))
-        {
-            transform.Rotate(0, RSpeed, 0);
-        }
-        if (Input.GetKey(KeyCode.Q))
-        {
-            transform.Rotate(0, -RSpeed, 0);
+            transform.Translate(-XSpeed * .2f, 0, 0);
         }
 
         if (Input.GetKey(KeyCode.Space) && hasJump > 0)
@@ -65,7 +60,13 @@ public class PMovement : MonoBehaviour
             hasJump--;
         }
 
-        
+        //Model.transform.LookAt(CT.worldPosition);
+
+        Vector3 lookPos = CT.worldPosition - transform.position;
+        Quaternion lookRot = Quaternion.LookRotation(lookPos, Vector3.up);
+        float eulerY = lookRot.eulerAngles.y;
+        Quaternion rotation = Quaternion.Euler(0, eulerY, 0);
+        Model.transform.rotation = rotation ;
     }
     void OnCollisionEnter(Collision col)
     {
@@ -84,33 +85,11 @@ public class PMovement : MonoBehaviour
 
     void OnCollisionExit()
     {
-
         Salto = false;
     }
 
     void OnCollisionStay(Collision col)
     {
         Salto = true;
-
-        if (col.gameObject.name == "Among_Cube-1")
-        {
-            Destroy(Amogus1);
-            Amongquantity++;
-            Debug.Log("Amongcube Achieved");
-        }
-
-        if (col.gameObject.name == "Among_Cube-2")
-        {
-            Destroy(Amogus2);
-            Amongquantity++;
-            Debug.Log("Amongcube Achieved");
-        }
-
-        if (col.gameObject.name == "Among_Cube-3")
-        {
-            Destroy(Amogus3);
-            Amongquantity++;
-            Debug.Log("Amongcube Achieved");
-        }
     }
 }
