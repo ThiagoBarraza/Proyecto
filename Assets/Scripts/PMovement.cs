@@ -60,12 +60,12 @@ public class PMovement : MonoBehaviour
             hasJump--;
         }
 
-        //Model.transform.LookAt(CT.worldPosition);
+        //Model.transform.LookAt(CT.worldPosition); whole model "looksat", while i only want the y axis
 
         Vector3 lookPos = CT.worldPosition - transform.position;
         Quaternion lookRot = Quaternion.LookRotation(lookPos, Vector3.up);
         float eulerY = lookRot.eulerAngles.y;
-        Quaternion rotation = Quaternion.Euler(0, eulerY, 0);
+        Quaternion rotation = Quaternion.Euler(0, eulerY + 90, 0);
         Model.transform.rotation = rotation ;
     }
     void OnCollisionEnter(Collision col)
