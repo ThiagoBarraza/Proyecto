@@ -271,7 +271,7 @@ PrefabInstance:
     - target: {fileID: 4183804487298043165, guid: 8c87cdf4f29eace459f47bdc882acff4,
         type: 3}
       propertyPath: cameras.Array.data[0].rotationType
-      value: 9
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c87cdf4f29eace459f47bdc882acff4, type: 3}
@@ -350,13 +350,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 593635306}
-  m_LocalRotation: {x: 0.17364816, y: 0, z: 0, w: 0.9848078}
-  m_LocalPosition: {x: 0, y: 26.73, z: -20.2}
+  m_LocalRotation: {x: 0.32877374, y: -0, z: -0, w: 0.9444088}
+  m_LocalPosition: {x: 0, y: 26.73, z: -16.09}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 20, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 38.389, y: 0, z: 0}
 --- !u!1 &797519011 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: b471452b0e3fe2543a85ef7b8276715d,
@@ -595,11 +595,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b471452b0e3fe2543a85ef7b8276715d, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b471452b0e3fe2543a85ef7b8276715d, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.7071068
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b471452b0e3fe2543a85ef7b8276715d, type: 3}
       propertyPath: m_LocalRotation.z
@@ -607,7 +607,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b471452b0e3fe2543a85ef7b8276715d, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.7071068
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b471452b0e3fe2543a85ef7b8276715d, type: 3}
       propertyPath: m_RootOrder
@@ -619,7 +619,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b471452b0e3fe2543a85ef7b8276715d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -270
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b471452b0e3fe2543a85ef7b8276715d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
