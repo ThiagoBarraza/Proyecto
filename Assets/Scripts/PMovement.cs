@@ -12,11 +12,12 @@ public class PMovement : MonoBehaviour
     public float XSpeed; //Moving backwards 
     public int vidas; //Player lives, might get reworked
     public int NroVidas; //Amount of lives, will get reworked
-    
-    
+
+
 
     //Resources
 
+    public GameObject Weapon;
     Rigidbody rb;
     public CameraTest CT;
     public GameObject Model;

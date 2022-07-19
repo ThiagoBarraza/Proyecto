@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2e1aac03f679bd84b946f22b075dbd0c
+guid: befbbbec86f970a4c9d6ee5c147edca8
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -8,18 +8,8 @@ ModelImporter:
     2100000: Material
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Cube
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material
-    second: {fileID: 2100000, guid: 47cdba2878909b64fa92587780c40ff0, type: 2}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: amogus
-    second: {fileID: 2800000, guid: f5015d02164d9c44481495e58829b666, type: 3}
+    4300000: Cylinder.001
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
@@ -50,7 +40,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 0.2
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
