@@ -16,8 +16,11 @@ public class Ammo: MonoBehaviour
         transform.position += transform.forward * speed;
     }
 
-    void OnCollisionEnter()
+    void OnCollisionEnter(Collision col)
     {
-        Destroy(gameObject);
+        if (col.gameObject.tag != "Ground" && col.gameObject.tag != "Ammo")
+        {
+            Destroy(gameObject);
+        }
     }
 }

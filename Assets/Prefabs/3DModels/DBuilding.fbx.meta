@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 772f730790b1d4447bbe2b79b5facc72
+guid: 205371161bd6b0c49ae50f93ea5206bc
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -8,18 +8,8 @@ ModelImporter:
     2100000: Material.001
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Cube.002
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material.001
-    second: {fileID: 2100000, guid: 8e9a7e5c434d9ce4fb485494c9be23ee, type: 2}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Paleta light
-    second: {fileID: 2800000, guid: 49bf3ba8252fb7b4e9c93f80a2bed7e1, type: 3}
+    4300000: Cube.003
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
