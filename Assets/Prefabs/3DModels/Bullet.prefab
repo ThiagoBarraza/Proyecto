@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 772328293002290021}
   - component: {fileID: 7701035042435216428}
   - component: {fileID: 1103314838642302983}
-  - component: {fileID: 2228279726003464639}
   - component: {fileID: 114939228140557580}
   - component: {fileID: 54560100149390888}
+  - component: {fileID: 3809741180965579731}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Ammo
@@ -80,19 +80,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!135 &2228279726003464639
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4645206136900975228}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.6278468
-  m_Center: {x: -0.008385269, y: -0.06558585, z: -0.11522126}
 --- !u!114 &114939228140557580
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -123,3 +110,16 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!65 &3809741180965579731
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4645206136900975228}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
