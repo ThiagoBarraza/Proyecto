@@ -18,7 +18,7 @@ public class Ammo: MonoBehaviour
 
     void OnCollisionEnter(Collision col)
     {
-        if (col.gameObject.tag != "Ground" && col.gameObject.tag != "Ammo")
+        if (col.gameObject.tag != "Ground" && col.gameObject.tag != "Ammo" && col.gameObject.tag != "EnemyBullet")
         {
             Destroy(gameObject);
         }

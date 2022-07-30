@@ -72,6 +72,11 @@ public class PMovement : MonoBehaviour
         {
             vidas--;
         }
+
+        if (col.gameObject.tag == "EnemyBullet")
+        {
+            Destroy(gameObject);
+        }
     }
 
     void OnCollisionExit()
