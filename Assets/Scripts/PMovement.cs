@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PMovement : MonoBehaviour
 {
@@ -10,8 +11,8 @@ public class PMovement : MonoBehaviour
     
     public float ZSpeed; //Moving forward speed
     public float XSpeed; //Moving backwards 
-    public int vidas; //Player lives, might get reworked
-    public int NroVidas; //Amount of lives, will get reworked
+    int ActualHP; 
+    public int MaxHP; 
 
 
 
@@ -21,17 +22,23 @@ public class PMovement : MonoBehaviour
     Rigidbody rb;
     public CameraTest CT;
     public GameObject Model;
+    public Text HPLabel;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        ActualHP = MaxHP;
         rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(ActualHP < 1)
+        {
+            Destroy(gameObject);
+        }
+        
         CT = FindObjectOfType<CameraTest>();
         
         if (Input.GetKey(KeyCode.W))
@@ -58,6 +65,8 @@ public class PMovement : MonoBehaviour
         float eulerY = lookRot.eulerAngles.y;
         Quaternion rotation = Quaternion.Euler(0, eulerY + 90, 0);
         Model.transform.rotation = rotation ;
+
+        
     }
     void OnCollisionEnter(Collision col)
     {
@@ -68,14 +77,10 @@ public class PMovement : MonoBehaviour
             
         }
 
-        if (col.gameObject.name == "DeathWall")
-        {
-            vidas--;
-        }
-
         if (col.gameObject.tag == "EnemyBullet")
         {
-            Destroy(gameObject);
+            ActualHP--;
+            HPLabel.text = "HP:" + ActualHP;
         }
     }
 

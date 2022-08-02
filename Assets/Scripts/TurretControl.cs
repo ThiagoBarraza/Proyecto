@@ -15,12 +15,14 @@ public class TurretControl : MonoBehaviour
     bool CanShoot = true;
     //GameObject Foundation;
     bool OnRange = false;
+    AudioSource audio;
     
     // Start is called before the first frame update
     void Start()
     {
         //Foundation = Turret.transform.Find("Foundation").gameObject;
         CRTime = RTime;
+        audio = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -28,6 +30,7 @@ public class TurretControl : MonoBehaviour
     {
         if (OnRange == true)
         {
+            
             Vector3 lookPos = Player.transform.position - transform.position;
             Quaternion lookRot = Quaternion.LookRotation(lookPos, Vector3.up);
             float eulerY = lookRot.eulerAngles.y;
@@ -40,6 +43,7 @@ public class TurretControl : MonoBehaviour
             }
             if (CRTime <= 0)
             {
+                audio.Play();
                 var b = Instantiate(Bullet, BulletSpawn1.position, BulletSpawn1.rotation);
                 var c = Instantiate(Bullet, BulletSpawn2.position, BulletSpawn2.rotation);
                 b.transform.eulerAngles += new Vector3(Random.Range(-Innacuracy, Innacuracy), Random.Range(-Innacuracy, Innacuracy), Random.Range(-Innacuracy, Innacuracy));
