@@ -32,18 +32,18 @@ public class BuildingHP : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Health <= MaxHealth / 2)
+        if(Health <= MaxHealth / 2 && Onfire == false && Fire)
         {
-            if (Onfire == false)
-            {
-                Fire.Play();
-                Onfire = true;
-            }
+            Fire.Play();
+            Onfire = true;
         }
         
         if(Health <= 0)
         {
-            DBuilding.SetActive(true);
+            if (DBuilding)
+            {
+                DBuilding.SetActive(true);
+            }
             gameObject.SetActive(false);
         }
     }
