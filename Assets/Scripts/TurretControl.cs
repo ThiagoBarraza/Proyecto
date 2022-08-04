@@ -22,6 +22,7 @@ public class TurretControl : MonoBehaviour
     {
         //Foundation = Turret.transform.Find("Foundation").gameObject;
         CRTime = RTime;
+
         audio = GetComponent<AudioSource>();
     }
 
@@ -45,9 +46,13 @@ public class TurretControl : MonoBehaviour
             {
                 audio.Play();
                 var b = Instantiate(Bullet, BulletSpawn1.position, BulletSpawn1.rotation);
-                var c = Instantiate(Bullet, BulletSpawn2.position, BulletSpawn2.rotation);
+                if (BulletSpawn2)
+                {
+                    var c = Instantiate(Bullet, BulletSpawn2.position, BulletSpawn2.rotation);
+                    c.transform.eulerAngles += new Vector3(Random.Range(-Innacuracy, Innacuracy), Random.Range(-Innacuracy, Innacuracy), Random.Range(-Innacuracy, Innacuracy));
+                }
                 b.transform.eulerAngles += new Vector3(Random.Range(-Innacuracy, Innacuracy), Random.Range(-Innacuracy, Innacuracy), Random.Range(-Innacuracy, Innacuracy));
-                c.transform.eulerAngles += new Vector3(Random.Range(-Innacuracy, Innacuracy), Random.Range(-Innacuracy, Innacuracy), Random.Range(-Innacuracy, Innacuracy));
+                
                 CRTime = RTime;
                 CRTime = RTime;
                 Debug.Log("Shot");

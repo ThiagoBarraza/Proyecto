@@ -11,14 +11,10 @@ public class Spin : MonoBehaviour
     public float YSrotation;
     public float ZSrotation;
     public float XSrotation;
-    int i;
     // Start is called before the first frame update
     void Start()
     {
-        while (true)
-        {
-            i--;
-        }
+        
         transform.eulerAngles = v3;
         v3.y = YSrotation;
         v3.z = ZSrotation;
