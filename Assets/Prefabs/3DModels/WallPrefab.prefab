@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7107495359570744069}
   - component: {fileID: 4197722063557235420}
   m_Layer: 0
-  m_Name: WallCenter
+  m_Name: WallPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -94,6 +94,8 @@ MonoBehaviour:
   DBuilding: {fileID: 0}
   MaxHealth: 40
   Fire: {fileID: 0}
+  Reward: 50
+  PM: {fileID: 0}
 --- !u!65 &4197722063557235420
 BoxCollider:
   m_ObjectHideFlags: 0

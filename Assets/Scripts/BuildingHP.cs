@@ -15,6 +15,8 @@ public class BuildingHP : MonoBehaviour
 
     //HP
 
+      
+
     int Health;
 
     //Fire
@@ -22,17 +24,38 @@ public class BuildingHP : MonoBehaviour
     public ParticleSystem Fire;
     bool Onfire = false;
 
+    //Points awarded once destroyed
+
+    public int Reward;
+
+    public PMovement PM;
+    //Connection to other script
+
+
+
+    //
+
+
+
+
+
     // Start is called before the first frame update
     void Start()
     {
         Health = MaxHealth;
-        DBuilding.SetActive(false);
+        if (DBuilding)
+        {
+            DBuilding.SetActive(false);
+        }
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Health <= MaxHealth / 2 && Onfire == false && Fire)
+        PM = FindObjectOfType<PMovement>();
+
+        if (Health <= MaxHealth / 2 && Onfire == false && Fire)
         {
             Fire.Play();
             Onfire = true;
@@ -40,6 +63,7 @@ public class BuildingHP : MonoBehaviour
         
         if(Health <= 0)
         {
+            PM.Points += Reward;
             if (DBuilding)
             {
                 DBuilding.SetActive(true);

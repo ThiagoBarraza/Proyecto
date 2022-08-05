@@ -12,9 +12,10 @@ public class PMovement : MonoBehaviour
     public float ZSpeed; //Moving forward speed
     public float XSpeed; //Moving backwards 
     int ActualHP; 
-    public int MaxHP; 
+    public int MaxHP;
 
-
+    public int Points = 0;
+    public Text PointText;
 
     //Resources
 
@@ -39,7 +40,7 @@ public class PMovement : MonoBehaviour
             Destroy(gameObject);
         }
         
-        CT = FindObjectOfType<CameraTest>();
+        
         
         if (Input.GetKey(KeyCode.W))
         {
@@ -65,6 +66,8 @@ public class PMovement : MonoBehaviour
         float eulerY = lookRot.eulerAngles.y;
         Quaternion rotation = Quaternion.Euler(0, eulerY + 90, 0);
         Model.transform.rotation = rotation ;
+
+        PointText.text = "Pts: " + Points;
 
         
     }
