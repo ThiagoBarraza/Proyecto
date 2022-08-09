@@ -34,7 +34,7 @@ public class TurretControl : MonoBehaviour
         {
 
             var targetPos = Target.position;
-            targetPos.y = Turret.transform.position.y; //set targetPos y equal to mine, so I only look at my own plane
+            targetPos.y = Turret.transform.position.y; 
             var targetDir = Quaternion.LookRotation(targetPos - Turret.transform.position);
             Turret.transform.rotation = Quaternion.Slerp(Turret.transform.rotation, targetDir, RotationSpeed * Time.deltaTime);
 

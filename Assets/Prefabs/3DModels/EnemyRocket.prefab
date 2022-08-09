@@ -121,7 +121,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4846f49cbee8cb419273b237eae8fa4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.7
-  lifeTime: 20
-  RotationSpeed: 8
-  TrackTime: 0.15
+  speed: 0.75
+  lifeTime: 4
+  RotationSpeed: 7.1
+  TrackTime: 0.2
+  StopTrack: 0.3

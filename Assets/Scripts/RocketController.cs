@@ -11,6 +11,7 @@ public class RocketController : MonoBehaviour
     //public TurretControl TC;
     public float RotationSpeed;
     public float TrackTime;
+    public float StopTrack;
     void Start()
     {
         Destroy(gameObject, lifeTime);
@@ -29,8 +30,9 @@ public class RocketController : MonoBehaviour
         {
             TrackTime -= Time.deltaTime;
         }
-        if(TrackTime <= 0)
+        if(TrackTime <= 0 &&  StopTrack > 0)
         {
+            StopTrack -= Time.deltaTime;
             var targetRotation = Quaternion.LookRotation(Target.transform.position - transform.position);
 
             // Smoothly rotate towards the target point.
