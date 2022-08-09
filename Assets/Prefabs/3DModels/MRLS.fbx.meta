@@ -1,22 +1,50 @@
 fileFormatVersion: 2
-guid: 187977b0b925c7246af800458e9d7cdd
+guid: cc78b8aeaa4690146a8b9e32c8ed43fd
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: LLMG
-    100004: LLMG.001
-    400000: //RootNode
-    400002: LLMG
-    400004: LLMG.001
-    2100000: Material.001
-    2300000: LLMG
-    2300002: LLMG.001
-    3300000: LLMG
-    3300002: LLMG.001
-    4300000: LLMG
-    4300002: LLMG.001
-  externalObjects: {}
+    100000: MRLS
+    100002: //RootNode
+    100004: Thingthatspins
+    100006: WheelBack.L
+    100008: WheelBack.R
+    100010: WheelFront.L
+    100012: WheelFront.R
+    400000: MRLS
+    400002: //RootNode
+    400004: Thingthatspins
+    400006: WheelBack.L
+    400008: WheelBack.R
+    400010: WheelFront.L
+    400012: WheelFront.R
+    2100000: Material
+    2300000: MRLS
+    2300002: //RootNode
+    2300004: Thingthatspins
+    2300006: WheelBack.L
+    2300008: WheelBack.R
+    2300010: WheelFront.L
+    2300012: WheelFront.R
+    3300000: MRLS
+    3300002: //RootNode
+    3300004: Thingthatspins
+    3300006: WheelBack.L
+    3300008: WheelBack.R
+    3300010: WheelFront.L
+    3300012: WheelFront.R
+    4300000: Vehicle
+    4300002: WheelFront.R
+    4300004: WheelBack.R
+    4300006: WheelFront.L
+    4300008: WheelBack.L
+    4300010: MRLS
+    4300012: Thingthatspins
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material
+    second: {fileID: 2100000, guid: 997ec9544aaa6d34a9a8f80246853b38, type: 3}
   materials:
     importMaterials: 1
     materialName: 0
