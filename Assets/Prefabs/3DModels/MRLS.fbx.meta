@@ -39,12 +39,7 @@ ModelImporter:
     4300008: WheelBack.L
     4300010: MRLS
     4300012: Thingthatspins
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material
-    second: {fileID: 2100000, guid: 997ec9544aaa6d34a9a8f80246853b38, type: 3}
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0

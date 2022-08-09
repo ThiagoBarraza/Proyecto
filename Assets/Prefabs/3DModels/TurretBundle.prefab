@@ -227,12 +227,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Turret: {fileID: 5277012070270242330}
-  Player: {fileID: 0}
+  Target: {fileID: 0}
   BulletSpawn1: {fileID: 5277012068683786654}
   BulletSpawn2: {fileID: 5277012069079075824}
   Bullet: {fileID: 206964904733455989, guid: 1ea6b5be69fe65e4982408b8c33428e2, type: 3}
   RTime: 1
   Innacuracy: 1
+  RotationSpeed: 8
 --- !u!114 &5277012068903789333
 MonoBehaviour:
   m_ObjectHideFlags: 0

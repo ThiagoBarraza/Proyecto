@@ -5,7 +5,7 @@ using UnityEngine;
 public class TurretControl : MonoBehaviour
 {
     public GameObject Turret;
-    public GameObject Player;
+    public Transform Target;
     public Transform BulletSpawn1 = null;
     public Transform BulletSpawn2 = null;
     public GameObject Bullet;
@@ -15,7 +15,8 @@ public class TurretControl : MonoBehaviour
     bool CanShoot = true;
     //GameObject Foundation;
     bool OnRange = false;
-    AudioSource audio;
+    public float RotationSpeed;
+    AudioSource Sound;
     
     // Start is called before the first frame update
     void Start()
@@ -23,7 +24,7 @@ public class TurretControl : MonoBehaviour
         //Foundation = Turret.transform.Find("Foundation").gameObject;
         CRTime = RTime;
 
-        audio = GetComponent<AudioSource>();
+        Sound = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -31,12 +32,11 @@ public class TurretControl : MonoBehaviour
     {
         if (OnRange == true)
         {
-            
-            Vector3 lookPos = Player.transform.position - transform.position;
-            Quaternion lookRot = Quaternion.LookRotation(lookPos, Vector3.up);
-            float eulerY = lookRot.eulerAngles.y;
-            Quaternion rotation = Quaternion.Euler(0, eulerY, 0);
-            Turret.transform.rotation = rotation;
+
+            var targetPos = Target.position;
+            targetPos.y = Turret.transform.position.y; //set targetPos y equal to mine, so I only look at my own plane
+            var targetDir = Quaternion.LookRotation(targetPos - Turret.transform.position);
+            Turret.transform.rotation = Quaternion.Slerp(Turret.transform.rotation, targetDir, RotationSpeed * Time.deltaTime);
 
             if (CRTime > 0)
             {
@@ -44,7 +44,10 @@ public class TurretControl : MonoBehaviour
             }
             if (CRTime <= 0)
             {
-                audio.Play();
+                if (Sound)
+                {
+                    Sound.Play();
+                }
                 var b = Instantiate(Bullet, BulletSpawn1.position, BulletSpawn1.rotation);
                 if (BulletSpawn2)
                 {
