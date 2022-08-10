@@ -15,8 +15,6 @@ public class BuildingHP : MonoBehaviour
 
     //HP
 
-      
-
     int Health;
 
     //Fire
@@ -28,20 +26,15 @@ public class BuildingHP : MonoBehaviour
 
     public int Reward;
 
+    //Conection to the main points manager script
+
     public PMovement PM;
-    //Connection to other script
-
-
-
-    //
-
-
-
-
 
     // Start is called before the first frame update
     void Start()
     {
+        //GameObject player = GameObject.FindWithTag("Player");
+        //Target = player.FindObjectOfType<PMovement>();
         Health = MaxHealth;
         if (DBuilding)
         {

@@ -23,8 +23,9 @@ public class TurretControl : MonoBehaviour
     {
         //Foundation = Turret.transform.Find("Foundation").gameObject;
         CRTime = RTime;
-
         Sound = GetComponent<AudioSource>();
+        GameObject player = GameObject.FindWithTag("Player");
+        Target = player.transform;
     }
 
     // Update is called once per frame
