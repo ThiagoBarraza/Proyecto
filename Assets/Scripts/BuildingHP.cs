@@ -33,8 +33,8 @@ public class BuildingHP : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //GameObject player = GameObject.FindWithTag("Player");
-        //Target = player.FindObjectOfType<PMovement>();
+        GameObject player = GameObject.FindWithTag("Player");
+        PM = GameObject.FindObjectOfType<PMovement>();
         Health = MaxHealth;
         if (DBuilding)
         {
