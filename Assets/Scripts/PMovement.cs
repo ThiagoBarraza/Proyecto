@@ -11,8 +11,8 @@ public class PMovement : MonoBehaviour
     
     public float ZSpeed; //Moving forward speed
     public float XSpeed; //Moving backwards 
-    int ActualHP; 
-    public int MaxHP;
+    public float ActualHP; 
+    public float MaxHP;
 
     public int Points = 0;
     public Text PointText;
@@ -23,7 +23,6 @@ public class PMovement : MonoBehaviour
     Rigidbody rb;
     public CameraTest CT;
     public GameObject Model;
-    public Text HPLabel;
 
     // Start is called before the first frame update
     void Start()
@@ -65,11 +64,7 @@ public class PMovement : MonoBehaviour
         Quaternion lookRot = Quaternion.LookRotation(lookPos, Vector3.up);
         float eulerY = lookRot.eulerAngles.y;
         Quaternion rotation = Quaternion.Euler(0, eulerY + 90, 0);
-        Model.transform.rotation = rotation ;
-
-        PointText.text = "Pts: " + Points;
-
-        
+        Model.transform.rotation = rotation;
     }
     void OnCollisionEnter(Collision col)
     {
@@ -83,7 +78,7 @@ public class PMovement : MonoBehaviour
         if (col.gameObject.tag == "EnemyBullet")
         {
             ActualHP--;
-            HPLabel.text = "HP:" + ActualHP;
+            
         }
     }
 
