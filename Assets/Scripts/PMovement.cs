@@ -60,7 +60,7 @@ public class PMovement : MonoBehaviour
 
         //Model.transform.LookAt(CT.worldPosition); whole model "looksat", while i only want the y axis
 
-        Vector3 lookPos = CT.worldPosition - transform.position;
+        Vector3 lookPos = CT.pointer.transform.position - transform.position;
         Quaternion lookRot = Quaternion.LookRotation(lookPos, Vector3.up);
         float eulerY = lookRot.eulerAngles.y;
         Quaternion rotation = Quaternion.Euler(0, eulerY + 90, 0);

@@ -5,8 +5,10 @@ using UnityEngine;
 public class CameraTest : MonoBehaviour
 {
     public Vector3 worldPosition;
+    public Transform pointer;
     Plane plane = new Plane(Vector3.up, 0);
     // Start is called before the first frame update
+    
     void Start()
     {
         
@@ -16,12 +18,18 @@ public class CameraTest : MonoBehaviour
     void Update()
     {
         float distance;
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        if (plane.Raycast(ray, out distance))
+        Ray rayo = Camera.main.ScreenPointToRay(Input.mousePosition);
+        if (plane.Raycast(rayo, out distance))
         {
-            worldPosition = ray.GetPoint(distance);
+            worldPosition = rayo.GetPoint(distance);
         }
-
+        
+        float why;
+        var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        if(Physics.Raycast(ray, out Hit))
+        {
+            pointer = Hit.transform;
+        }
         //Debug.Log(worldPosition);
     }
 }
