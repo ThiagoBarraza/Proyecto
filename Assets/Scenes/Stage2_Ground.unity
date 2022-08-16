@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4628,6 +4628,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Walker
       objectReference: {fileID: 0}
+    - target: {fileID: 5949547742719348841, guid: c64101288cf50d3469047ea045ebd3ed,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5949547742719380553, guid: c64101288cf50d3469047ea045ebd3ed,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5014,6 +5019,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Artly (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3842606546529612840, guid: 1fce6a15fbb19c941893bbc7339efd0f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1fce6a15fbb19c941893bbc7339efd0f, type: 3}
@@ -11945,7 +11955,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 747323901}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fb970a48b9609d848ade1dcb07643f35, type: 3}
   m_Name: 
@@ -14339,6 +14349,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Walker (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5949547742719348841, guid: c64101288cf50d3469047ea045ebd3ed,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5949547742719380553, guid: c64101288cf50d3469047ea045ebd3ed,
         type: 3}
@@ -16962,6 +16977,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Walker (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5949547742719348841, guid: c64101288cf50d3469047ea045ebd3ed,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5949547742719380553, guid: c64101288cf50d3469047ea045ebd3ed,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -19056,6 +19076,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Artly
       objectReference: {fileID: 0}
+    - target: {fileID: 3842606546529612840, guid: 1fce6a15fbb19c941893bbc7339efd0f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1fce6a15fbb19c941893bbc7339efd0f, type: 3}
 --- !u!1001 &1348144994
@@ -19134,6 +19159,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Walker (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5949547742719348841, guid: c64101288cf50d3469047ea045ebd3ed,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5949547742719380553, guid: c64101288cf50d3469047ea045ebd3ed,
         type: 3}
@@ -20552,6 +20582,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Walker (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5949547742719348841, guid: c64101288cf50d3469047ea045ebd3ed,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5949547742719380553, guid: c64101288cf50d3469047ea045ebd3ed,
         type: 3}
@@ -22217,6 +22252,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   worldPosition: {x: 0, y: 0, z: 0}
+  pointer: {fileID: 0}
+  planeY: -11
+  camera: {fileID: 593635308}
+  debugObject: {fileID: 514081597}
 --- !u!4 &1567819019
 Transform:
   m_ObjectHideFlags: 0
@@ -24378,6 +24417,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Artly (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3842606546529612840, guid: 1fce6a15fbb19c941893bbc7339efd0f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1fce6a15fbb19c941893bbc7339efd0f, type: 3}
@@ -28704,6 +28748,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Artly (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3842606546529612840, guid: 1fce6a15fbb19c941893bbc7339efd0f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1fce6a15fbb19c941893bbc7339efd0f, type: 3}

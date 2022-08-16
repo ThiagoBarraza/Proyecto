@@ -38,9 +38,6 @@ public class PMovement : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        
-        
-        
         if (Input.GetKey(KeyCode.W))
         {
             transform.Translate(0, 0, ZSpeed * .2f);
@@ -58,27 +55,20 @@ public class PMovement : MonoBehaviour
             transform.Translate(-XSpeed * .2f, 0, 0);
         }
 
-        //Model.transform.LookAt(CT.worldPosition); whole model "looksat", while i only want the y axis
-
-        Vector3 lookPos = CT.pointer.transform.position - transform.position;
+        Vector3 lookPos = CT.worldPosition - transform.position;
         Quaternion lookRot = Quaternion.LookRotation(lookPos, Vector3.up);
         float eulerY = lookRot.eulerAngles.y;
         Quaternion rotation = Quaternion.Euler(0, eulerY + 90, 0);
         Model.transform.rotation = rotation;
+
+        PointText.text = "Ptos: " + Points;
     }
     void OnCollisionEnter(Collision col)
     {
-
-
-        if (col.gameObject.tag == "Ground")
-        {
-            
-        }
-
+        
         if (col.gameObject.tag == "EnemyBullet")
         {
             ActualHP--;
-            
         }
     }
 
