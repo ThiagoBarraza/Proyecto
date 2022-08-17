@@ -1,11 +1,11 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class PMovement : MonoBehaviour
 {
-    
     
     //Variables
     
@@ -54,6 +54,10 @@ public class PMovement : MonoBehaviour
         {
             transform.Translate(-XSpeed * .2f, 0, 0);
         }
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            Habilidad();
+        }
 
         Vector3 lookPos = CT.worldPosition - transform.position;
         Quaternion lookRot = Quaternion.LookRotation(lookPos, Vector3.up);
@@ -63,6 +67,12 @@ public class PMovement : MonoBehaviour
 
         PointText.text = "Ptos: " + Points;
     }
+
+    private void Habilidad()
+    {
+        Debug.Log("Rockets");
+    }
+
     void OnCollisionEnter(Collision col)
     {
         
@@ -70,15 +80,5 @@ public class PMovement : MonoBehaviour
         {
             ActualHP--;
         }
-    }
-
-    void OnCollisionExit()
-    {
-        
-    }
-
-    void OnCollisionStay(Collision col)
-    {
-        
     }
 }
