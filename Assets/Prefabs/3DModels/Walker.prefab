@@ -664,7 +664,7 @@ MonoBehaviour:
   Target: {fileID: 0}
   BulletSpawn1: {fileID: 5949547742130695122}
   BulletSpawn2: {fileID: 5949547741806417553}
-  Bullet: {fileID: 206964904733455989, guid: 1ea6b5be69fe65e4982408b8c33428e2, type: 3}
+  Bullet: {fileID: 1323046119432620881, guid: 1d096017ee52d1a4ab3524af74c38899, type: 3}
   RTime: 1.4
   Innacuracy: 0.1
   RotationSpeed: 3
