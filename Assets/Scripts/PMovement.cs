@@ -41,19 +41,19 @@ public class PMovement : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.W))
         {
-            transform.Translate(0, 0, ZSpeed * .2f);
+            transform.Translate(0, 0, ZSpeed);
         }
         if (Input.GetKey(KeyCode.S))
         {
-            transform.Translate(0, 0, -ZSpeed * .2f);
+            transform.Translate(0, 0, -ZSpeed);
         }
         if (Input.GetKey(KeyCode.D))
         {
-            transform.Translate(XSpeed * .2f, 0, 0);
+            transform.Translate(XSpeed, 0, 0);
         }
         if (Input.GetKey(KeyCode.A))
         {
-            transform.Translate(-XSpeed * .2f, 0, 0);
+            transform.Translate(-XSpeed, 0, 0);
         }
         if (Input.GetKeyDown(KeyCode.Q))
         {
