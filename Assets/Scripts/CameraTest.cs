@@ -24,7 +24,10 @@ public class CameraTest : MonoBehaviour
         {
             worldPosition = rayo.GetPoint(distance);
             Debug.DrawRay(Camara.transform.position, forward , Color.red);
-            debugObject.position = worldPosition;
+            if (debugObject)
+            {
+                debugObject.position = worldPosition;
+            }
         }
     }
 }

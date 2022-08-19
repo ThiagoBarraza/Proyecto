@@ -13,6 +13,7 @@ public class PMovement : MonoBehaviour
     public float XSpeed; //Moving backwards 
     public float ActualHP; 
     public float MaxHP;
+    public float AddedRotation = 90;
 
     public int Points = 0;
     public Text PointText;
@@ -54,7 +55,7 @@ public class PMovement : MonoBehaviour
         {
             transform.Translate(-XSpeed * .2f, 0, 0);
         }
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.Q))
         {
             Habilidad();
         }
@@ -62,7 +63,7 @@ public class PMovement : MonoBehaviour
         Vector3 lookPos = CT.worldPosition - transform.position;
         Quaternion lookRot = Quaternion.LookRotation(lookPos, Vector3.up);
         float eulerY = lookRot.eulerAngles.y;
-        Quaternion rotation = Quaternion.Euler(0, eulerY + 90, 0);
+        Quaternion rotation = Quaternion.Euler(0, eulerY + AddedRotation, 0);
         Model.transform.rotation = rotation;
 
         PointText.text = "Ptos: " + Points;
