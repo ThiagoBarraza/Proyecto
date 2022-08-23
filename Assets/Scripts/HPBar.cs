@@ -8,18 +8,34 @@ public class HPBar : MonoBehaviour
     private Image Display;
 
     public PMovement PM;
+    public MissileHability MH;
 
     // Start is called before the first frame update
     void Start()
     {
         Display = GetComponent<Image>();
         GameObject player = GameObject.FindWithTag("Player");
-        PM = GameObject.FindObjectOfType<PMovement>();
+        if (PM)
+        {
+            PM = GameObject.FindObjectOfType<PMovement>();
+        }
+        else
+        {
+            MH = GameObject.FindObjectOfType<MissileHability>();
+        }
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        Display.fillAmount = PM.ActualHP / PM.MaxHP;
+        if (PM)
+        {
+            Display.fillAmount = PM.ActualHP / PM.MaxHP;
+        }
+        else
+        {
+            Display.fillAmount = MH.ActualCooldown / MH.Cooldown;
+        }
     }
 }

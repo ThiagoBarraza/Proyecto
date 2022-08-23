@@ -42,7 +42,7 @@ public class RocketController : MonoBehaviour
 
     void OnCollisionEnter(Collision col)
     {
-        if (col.gameObject.tag != "Ground" && col.gameObject.tag != "Ammo" && col.gameObject.tag != "EnemyBullet")
+        if (col.gameObject.tag != "Ground" && col.gameObject.tag != "Ammo" && col.gameObject.tag != "EnemyBullet" && col.gameObject.tag != "Rocket")
         {
             Destroy(gameObject);
         }

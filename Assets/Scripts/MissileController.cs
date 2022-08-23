@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Missilecontroller : MonoBehaviour
+public class MissileController : MonoBehaviour
 {
     public float speed;
     public float lifeTime;
     Vector3 Target;
-    GameObject Player;
+    GameObject CameraTestEmpty;
     public CameraTest CT;
     public float RotationSpeed;
     public float TrackTime;
@@ -15,6 +15,7 @@ public class Missilecontroller : MonoBehaviour
     void Start()
     {
         Destroy(gameObject, lifeTime);
+        CameraTestEmpty = GameObject.FindWithTag("CT");
         CT = FindObjectOfType<CameraTest>();
         Target = CT.worldPosition;
     }

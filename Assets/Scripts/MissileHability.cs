@@ -6,14 +6,15 @@ public class MissileHability : MonoBehaviour
 {
     [SerializeField] GameObject Missile;
     [SerializeField] Transform[] MissileSpawn;
-    [SerializeField] float Cooldown;
+    public float Cooldown;
+    public float ActualCooldown;
     public CameraTest CT;
     public Vector3 Target;
     
     // Start is called before the first frame update
     void Start()
     {
-        
+        ActualCooldown = Cooldown;
     }
 
     // Update is called once per frame
@@ -21,13 +22,20 @@ public class MissileHability : MonoBehaviour
     {
         CT = FindObjectOfType<CameraTest>();
 
-
-        for(int i = 0; i < MissileSpawn.Length; i++)
+        if(ActualCooldown > 0)
         {
-            var b = Instantiate(Missile, MissileSpawn[i].position, MissileSpawn[i].rotation);
+            ActualCooldown -= Time.deltaTime;
         }
-
-
-        
+        if (ActualCooldown <= 0)
+        {
+            if (Input.GetKeyDown(KeyCode.Q))
+            {
+                for (int i = 0; i < MissileSpawn.Length; i++)
+                {
+                    var b = Instantiate(Missile, MissileSpawn[i].position, MissileSpawn[i].rotation);
+                    ActualCooldown = Cooldown;
+                }
+            }
+        }
     }
 }

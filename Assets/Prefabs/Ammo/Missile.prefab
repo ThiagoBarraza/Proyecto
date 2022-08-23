@@ -13,8 +13,7 @@ GameObject:
   - component: {fileID: 157596812849137959}
   - component: {fileID: 982330525013903112}
   - component: {fileID: 4160988625989468915}
-  - component: {fileID: 7921949932839314990}
-  - component: {fileID: 114836616650429084}
+  - component: {fileID: 6948862228667153573}
   m_Layer: 0
   m_Name: Missile
   m_TagString: Rocket
@@ -111,24 +110,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &7921949932839314990
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5554961620542165852}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4846f49cbee8cb419273b237eae8fa4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0.75
-  lifeTime: 4
-  RotationSpeed: 7.1
-  TrackTime: 0.25
-  StopTrack: 0.3
---- !u!114 &114836616650429084
+--- !u!114 &6948862228667153573
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -140,6 +122,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d651f9859b1e1de468de8d84f713f0d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 1.25
+  lifeTime: 10
+  CT: {fileID: 0}
+  RotationSpeed: 10
+  TrackTime: 0.35
+  StopTrack: 0.4
 --- !u!1 &7970677852487829153
 GameObject:
   m_ObjectHideFlags: 0
