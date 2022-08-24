@@ -9,21 +9,20 @@ public class PMovement : MonoBehaviour
     
     //Variables
     
-    public float ZSpeed; //Moving forward speed
-    public float XSpeed; //Moving backwards 
+    [SerializeField] private float ZSpeed; //Moving forward speed
+    [SerializeField] private float XSpeed; //Moving backwards 
     public float ActualHP; 
     public float MaxHP;
-    public float AddedRotation = 90;
+    [SerializeField] private float AddedRotation = 90;
 
     public int Points = 0;
     public Text PointText;
 
     //Resources
 
-    public GameObject Weapon;
     Rigidbody rb;
     public CameraTest CT;
-    public GameObject Model;
+    [SerializeField] private GameObject Model;
 
     // Start is called before the first frame update
     void Start()
@@ -55,10 +54,6 @@ public class PMovement : MonoBehaviour
         {
             transform.Translate(-XSpeed, 0, 0);
         }
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            Habilidad();
-        }
 
         Vector3 lookPos = CT.worldPosition - transform.position;
         Quaternion lookRot = Quaternion.LookRotation(lookPos, Vector3.up);
@@ -67,11 +62,6 @@ public class PMovement : MonoBehaviour
         Model.transform.rotation = rotation;
 
         PointText.text = "Ptos: " + Points;
-    }
-
-    private void Habilidad()
-    {
-        Debug.Log("Rockets");
     }
 
     void OnCollisionEnter(Collision col)

@@ -77,6 +77,8 @@ public class BuildingHP : MonoBehaviour
         if(col.gameObject.tag == "Rocket")
         {
             Health -= 15;
+
+            Debug.Log("Remaining health" + Health);
         }
     }
 }
