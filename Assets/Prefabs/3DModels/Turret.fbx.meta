@@ -1,5 +1,7 @@
 fileFormatVersion: 2
 guid: 997ec9544aaa6d34a9a8f80246853b38
+labels:
+- Lowpoly
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:

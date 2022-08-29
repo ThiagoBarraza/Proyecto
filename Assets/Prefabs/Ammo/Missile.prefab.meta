@@ -1,5 +1,7 @@
 fileFormatVersion: 2
 guid: 199bfc9494b703444977d19a04016c93
+labels:
+- Explosion
 PrefabImporter:
   externalObjects: {}
   userData: 

@@ -1,5 +1,9 @@
 fileFormatVersion: 2
 guid: a19b9626b4975b74ab72efbaa4093e56
+labels:
+- Animated
+- Character
+- Player
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
