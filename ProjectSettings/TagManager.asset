@@ -9,6 +9,8 @@ TagManager:
   - EnemyBullet
   - Rocket
   - CT
+  - LSUI
+  - MenuUI
   layers:
   - Default
   - TransparentFX
