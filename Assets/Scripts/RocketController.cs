@@ -8,6 +8,7 @@ public class RocketController : MonoBehaviour
     public float lifeTime;
     Transform Target;
     GameObject Player;
+    [SerializeField] GameObject Xplosion;
     //public TurretControl TC;
     public float RotationSpeed;
     public float TrackTime;
@@ -42,8 +43,10 @@ public class RocketController : MonoBehaviour
 
     void OnCollisionEnter(Collision col)
     {
-        if (col.gameObject.tag != "Ground" && col.gameObject.tag != "Ammo" && col.gameObject.tag != "EnemyBullet" && col.gameObject.tag != "Rocket")
+        if (col.gameObject.tag != "Ammo" && col.gameObject.tag != "EnemyBullet" && col.gameObject.tag != "Rocket")
         {
+            Vector3 contacto = col.contacts[0].point;
+            Instantiate(Xplosion, contacto);
             Destroy(gameObject);
         }
     }

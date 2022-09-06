@@ -11,6 +11,7 @@ TagManager:
   - CT
   - LSUI
   - MenuUI
+  - Explosion
   layers:
   - Default
   - TransparentFX

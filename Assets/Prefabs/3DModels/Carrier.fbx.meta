@@ -4,29 +4,29 @@ ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
-    100002: Cube
+    100002: Cube.001
     100004: Platform.L
     100006: Platform.R
     100008: Turret.L
     100010: Turret.R
     400000: //RootNode
-    400002: Cube
+    400002: Cube.001
     400004: Platform.L
     400006: Platform.R
     400008: Turret.L
     400010: Turret.R
     2100000: Material.001
-    2300000: Cube
+    2300000: Cube.001
     2300002: Platform.L
     2300004: Platform.R
     2300006: Turret.L
     2300008: Turret.R
-    3300000: Cube
+    3300000: Cube.001
     3300002: Platform.L
     3300004: Platform.R
     3300006: Turret.L
     3300008: Turret.R
-    4300000: Cube
+    4300000: Cube.001
     4300002: Turret.R
     4300004: Platform.R
     4300006: Platform.L
