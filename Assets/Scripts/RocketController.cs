@@ -45,8 +45,9 @@ public class RocketController : MonoBehaviour
     {
         if (col.gameObject.tag != "Ammo" && col.gameObject.tag != "EnemyBullet" && col.gameObject.tag != "Rocket")
         {
-            Vector3 contacto = col.contacts[0].point;
-            Instantiate(Xplosion, contacto);
+            
+            Vector3 Contacto = col.contacts[0].point;
+            Instantiate(Xplosion, Contacto, Quaternion.identity);
             Destroy(gameObject);
         }
     }

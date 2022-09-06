@@ -125,6 +125,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1.25
   lifeTime: 10
+  Xplosion: {fileID: 4524040305833974665, guid: b886c371fe5eec24cb2f03e53c04ca9d,
+    type: 3}
   RotationSpeed: 12
   TrackTime: 0.4
   StopTrack: 0.4
