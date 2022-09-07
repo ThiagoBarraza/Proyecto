@@ -519,7 +519,7 @@ MonoBehaviour:
   BulletSpawn1: {fileID: 4694777208145392523}
   BulletSpawn2: {fileID: 4694777208368991944}
   Bullet: {fileID: 1323046119432620881, guid: 1d096017ee52d1a4ab3524af74c38899, type: 3}
-  RTime: 0.1
+  RTime: 0.03
   Innacuracy: 12
   RotationSpeed: 10
 --- !u!114 &4694777209300568113
