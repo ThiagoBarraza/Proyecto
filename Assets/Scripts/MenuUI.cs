@@ -7,6 +7,7 @@ public class MenuUI : MonoBehaviour
 {
     [SerializeField] GameObject[] UIElements;
     [SerializeField] GameObject[] LSUI;
+    [SerializeField] GameObject[] OMUI;
     //[SerializeField] GameObject[] SettingsUI;
     
     
@@ -15,9 +16,15 @@ public class MenuUI : MonoBehaviour
     {
         UIElements = GameObject.FindGameObjectsWithTag("MenuUI");
         LSUI = GameObject.FindGameObjectsWithTag("LSUI");
+        OMUI = GameObject.FindGameObjectsWithTag("OMUI");
         for(int i = 0; i < LSUI.Length; i++)
         {
             LSUI[i].SetActive(false);
+        }
+
+        for (int i = 0; i < OMUI.Length; i++)
+        {
+            OMUI[i].SetActive(false);
         }
     }
 
@@ -41,6 +48,18 @@ public class MenuUI : MonoBehaviour
         for(int i = 0; i < LSUI.Length; i++)
         {
             LSUI[i].SetActive(!state);
+        }
+    }
+
+    public void OpenOptionsMenu(bool state)
+    {
+        for (int i = 0; i < UIElements.Length; i++)
+        {
+            UIElements[i].SetActive(state);
+        }
+        for (int i = 0; i < OMUI.Length; i++)
+        {
+            OMUI[i].SetActive(!state);
         }
     }
 }
