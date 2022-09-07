@@ -12,6 +12,7 @@ TagManager:
   - LSUI
   - MenuUI
   - Explosion
+  - Thunder
   layers:
   - Default
   - TransparentFX

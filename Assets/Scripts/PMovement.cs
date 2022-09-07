@@ -72,6 +72,11 @@ public class PMovement : MonoBehaviour
             ActualHP--;
         }
 
+        if (col.gameObject.tag == "Thunder")
+        {
+            ActualHP -= 3;
+        }
+
         if (col.gameObject.tag == "Explosion")
         {
             ActualHP -= 3;
