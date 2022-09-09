@@ -15,6 +15,7 @@ TagManager:
   - Thunder
   - GAU
   - OMUI
+  - CSUI
   layers:
   - Default
   - TransparentFX

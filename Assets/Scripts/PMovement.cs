@@ -23,6 +23,7 @@ public class PMovement : MonoBehaviour
     Rigidbody rb;
     public CameraTest CT;
     [SerializeField] private GameObject Model;
+    public bool Defeated;
 
     // Start is called before the first frame update
     void Start()
@@ -36,21 +37,22 @@ public class PMovement : MonoBehaviour
     {
         if(ActualHP < 1)
         {
-            Destroy(gameObject);
+            Defeated = true;
+            Model.SetActive(false);
         }
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCode.W) && !Defeated)
         {
             transform.Translate(0, 0, ZSpeed);
         }
-        if (Input.GetKey(KeyCode.S))
+        if (Input.GetKey(KeyCode.S) && !Defeated)
         {
             transform.Translate(0, 0, -ZSpeed);
         }
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.D) && !Defeated)
         {
             transform.Translate(XSpeed, 0, 0);
         }
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.A) && !Defeated)
         {
             transform.Translate(-XSpeed, 0, 0);
         }
