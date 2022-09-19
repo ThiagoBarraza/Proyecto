@@ -8,7 +8,7 @@ public class CameraTest : MonoBehaviour
     [SerializeField] private float planeY = 10.3f;
     [SerializeField] private Camera Camara;
     Plane plane;
-    [SerializeField] private Transform debugObject;
+    [SerializeField] private GameObject debugObject;
     
     void Start()
     {
@@ -26,8 +26,13 @@ public class CameraTest : MonoBehaviour
             Debug.DrawRay(Camara.transform.position, forward , Color.red);
             if (debugObject)
             {
-                debugObject.position = worldPosition;
+                debugObject.transform.position = worldPosition;
             }
         }
+
+        /*if(debugObject.transform.position.x < -10 && debugObject.transform.position.x > 10 && debugObject.transform.position.z < -10 && debugObject.transform.position.z > 10)
+        {
+        Camera will follow debug object, ony if its on the -10/10 x/y area, it should make a smooth translate with a kinda slow speed, because if not the camera could move to fast and be awful, need to think how to make the camera go back after that
+         }*/
     }
 }
