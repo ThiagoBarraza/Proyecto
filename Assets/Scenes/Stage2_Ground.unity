@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.4465782, g: 0.49641252, b: 0.5748167, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4341,15 +4341,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ad942c34edeb0744e882ace22840ffc6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -2.104141
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ad942c34edeb0744e882ace22840ffc6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.71780497
+      value: -0.35245246
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ad942c34edeb0744e882ace22840ffc6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -6.460245
+      value: -3.3835437
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ad942c34edeb0744e882ace22840ffc6, type: 3}
       propertyPath: m_LocalRotation.x
@@ -4397,7 +4397,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: ad942c34edeb0744e882ace22840ffc6, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: ad942c34edeb0744e882ace22840ffc6, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3300000, guid: ad942c34edeb0744e882ace22840ffc6, type: 3}
       propertyPath: m_Mesh
@@ -4796,7 +4800,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ad942c34edeb0744e882ace22840ffc6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -5.97
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ad942c34edeb0744e882ace22840ffc6, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4804,7 +4808,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ad942c34edeb0744e882ace22840ffc6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -9
+      value: -9.6
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ad942c34edeb0744e882ace22840ffc6, type: 3}
       propertyPath: m_LocalRotation.x
@@ -4852,7 +4856,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: ad942c34edeb0744e882ace22840ffc6, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3300000, guid: ad942c34edeb0744e882ace22840ffc6, type: 3}
       propertyPath: m_Mesh
@@ -14635,7 +14639,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 6.5
+  m_Radius: 4
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &797519017 stripped
 Transform:
