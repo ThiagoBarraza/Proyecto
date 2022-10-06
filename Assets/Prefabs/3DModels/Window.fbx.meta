@@ -18,7 +18,22 @@ ModelImporter:
     3300002: Window
     4300000: Plane
     4300002: Window
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: 2c19186ec972dac45bfa93e1a89d2fbe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.002
+    second: {fileID: 2100000, guid: 31dc91e4330b52d46a92891d589d7aa7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: f4af67312a8b776458849d57e11076c3, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
