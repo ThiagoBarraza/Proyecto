@@ -30,6 +30,10 @@ public class BuildingHP : MonoBehaviour
 
     public PMovement PM;
 
+    //Particle systema istantiated when destroyed
+
+    [SerializeField] GameObject DeathSystem;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -39,6 +43,10 @@ public class BuildingHP : MonoBehaviour
         if (DBuilding)
         {
             DBuilding.SetActive(false);
+        }
+        if (DeathSystem)
+        {
+            Instantiate(DeathSystem);
         }
         
     }

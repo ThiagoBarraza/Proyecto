@@ -10,7 +10,7 @@ public class ConditionDoor : MonoBehaviour
     [SerializeField] Vector3 DoorLFinalPos;
     [SerializeField] Vector3 DoorRFinalPos;
     [SerializeField] GameObject DoorR;
-    [SerializeField] GameObject Trigger;
+    [SerializeField] GameObject Trigg;
 
     // Start is called before the first frame update
     void Start()
@@ -21,9 +21,10 @@ public class ConditionDoor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!Trigger)
+        if (!Trigg.activeInHierarchy)
         {
             OpenDoors();
+            Debug.Log("Condition");
         }
     }
 
@@ -33,7 +34,7 @@ public class ConditionDoor : MonoBehaviour
         {
             DoorL.transform.Translate(-speed, 0, 0);
         }
-        if (DoorR.transform.position.x > DoorRFinalPos.x)
+        if (DoorR.transform.position.x < DoorRFinalPos.x)
         {
             DoorR.transform.Translate(speed, 0, 0);
         }
