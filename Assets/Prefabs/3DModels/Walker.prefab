@@ -682,9 +682,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DBuilding: {fileID: 0}
   MaxHealth: 60
+  DefaultMat: {fileID: 2100000, guid: 193cc52d11118c149973f8e475036722, type: 2}
+  DamageMaterial: {fileID: 2100000, guid: f98c01d18e8ea45458be6b3514231022, type: 2}
+  Models:
+  - {fileID: 5949547742719348853}
   Fire: {fileID: 3335835502587155689}
   Reward: 450
   PM: {fileID: 0}
+  DeathSystem: {fileID: 4524040305833974665, guid: b886c371fe5eec24cb2f03e53c04ca9d,
+    type: 3}
+  MatTime: 1
 --- !u!82 &82977331718363138
 AudioSource:
   m_ObjectHideFlags: 0
@@ -698,7 +705,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 98a4edd1abed8a24587b0d8da1b44ef1, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
-  m_Pitch: 1
+  m_Pitch: 2.52
   Loop: 0
   Mute: 0
   Spatialize: 0

@@ -13,7 +13,7 @@ public class CameraFollow : MonoBehaviour
         initialOffset = transform.position - targetObject.position;
     }
 
-    void FixedUpdate()
+    void LateUpdate()
     {
         cameraPosition = targetObject.position + initialOffset;
         transform.position = cameraPosition;

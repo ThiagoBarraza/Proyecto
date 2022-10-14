@@ -518,6 +518,8 @@ MonoBehaviour:
   Fire: {fileID: 7040215789127762193}
   Reward: 300
   PM: {fileID: 0}
+  DeathSystem: {fileID: 4524040305833974665, guid: b886c371fe5eec24cb2f03e53c04ca9d,
+    type: 3}
 --- !u!1 &3842606546529612842
 GameObject:
   m_ObjectHideFlags: 0
