@@ -248,9 +248,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DBuilding: {fileID: 5277012070571644982}
   MaxHealth: 50
+  DefaultMat: {fileID: 0}
+  DamageMaterial: {fileID: 0}
+  Models:
+  - {fileID: 5277012070270242334}
+  - {fileID: 5277012070270242330}
   Fire: {fileID: 4696033940735511291}
   Reward: 500
   PM: {fileID: 0}
+  DeathSystem: {fileID: 0}
+  MatTime: 0
 --- !u!65 &5277012069620011932
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -504,6 +511,12 @@ GameObject:
 --- !u!4 &5277012070270734908 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 997ec9544aaa6d34a9a8f80246853b38,
+    type: 3}
+  m_PrefabInstance: {fileID: 5277012070270339262}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5277012070270242334 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 997ec9544aaa6d34a9a8f80246853b38,
     type: 3}
   m_PrefabInstance: {fileID: 5277012070270339262}
   m_PrefabAsset: {fileID: 0}

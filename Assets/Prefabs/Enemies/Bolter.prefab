@@ -133,11 +133,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DBuilding: {fileID: 0}
   MaxHealth: 35
+  DefaultMat: {fileID: 0}
+  DamageMaterial: {fileID: 2100000, guid: 38b52ac1e2fad0044a4d34fdbbd9d012, type: 2}
+  Models:
+  - {fileID: 8247637394881704307}
   Fire: {fileID: 0}
   Reward: 200
   PM: {fileID: 0}
   DeathSystem: {fileID: 4524040305833974665, guid: b886c371fe5eec24cb2f03e53c04ca9d,
     type: 3}
+  MatTime: 0.09
 --- !u!1 &8247637394649132076
 GameObject:
   m_ObjectHideFlags: 0
@@ -245,6 +250,12 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: f98c01d18e8ea45458be6b3514231022, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7855494a1cc0885468e4399d8a4877ad, type: 3}
+--- !u!1 &8247637394881704307 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100002, guid: 7855494a1cc0885468e4399d8a4877ad,
+    type: 3}
+  m_PrefabInstance: {fileID: 8247637394881738705}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8247637394881342803 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 7855494a1cc0885468e4399d8a4877ad,

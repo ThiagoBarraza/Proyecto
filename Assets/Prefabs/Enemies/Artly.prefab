@@ -515,11 +515,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DBuilding: {fileID: 0}
   MaxHealth: 40
+  DefaultMat: {fileID: 2100000, guid: cc78b8aeaa4690146a8b9e32c8ed43fd, type: 3}
+  DamageMaterial: {fileID: 2100000, guid: 38b52ac1e2fad0044a4d34fdbbd9d012, type: 2}
+  Models:
+  - {fileID: 3842606546529612840}
+  - {fileID: 3842606546529612846}
+  - {fileID: 3842606546529612842}
+  - {fileID: 3842606546529612844}
+  - {fileID: 3842606546529612834}
+  - {fileID: 3842606546529612832}
+  - {fileID: 3842606546529612838}
   Fire: {fileID: 7040215789127762193}
   Reward: 300
   PM: {fileID: 0}
   DeathSystem: {fileID: 4524040305833974665, guid: b886c371fe5eec24cb2f03e53c04ca9d,
     type: 3}
+  MatTime: 0.09
 --- !u!1 &3842606546529612842
 GameObject:
   m_ObjectHideFlags: 0

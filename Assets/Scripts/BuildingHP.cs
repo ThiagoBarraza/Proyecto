@@ -22,6 +22,8 @@ public class BuildingHP : MonoBehaviour
     [SerializeField] Material DefaultMat;
     [SerializeField] Material DamageMaterial;
 
+    Renderer rend;
+
     //Models
 
     [SerializeField] GameObject[] Models;
@@ -45,12 +47,13 @@ public class BuildingHP : MonoBehaviour
 
     //
 
-    [SerializeField] float MatTime;
+    [SerializeField] float MatTime = 0.09f;
     float ActualMatTime;
 
     // Start is called before the first frame update
     void Start()
     {
+        rend = GetComponent<Renderer>();
         GameObject player = GameObject.FindWithTag("Player");
         PM = GameObject.FindObjectOfType<PMovement>();
         Health = MaxHealth;
@@ -63,7 +66,7 @@ public class BuildingHP : MonoBehaviour
             Instantiate(DeathSystem);
         }
         ActualMatTime = MatTime;
-        //Models = new GameObject[gameObject];
+        DefaultMat = Models[0].GetComponent<Renderer>().material;
     }
 
     // Update is called once per frame
