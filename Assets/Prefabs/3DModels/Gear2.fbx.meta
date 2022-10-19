@@ -1,18 +1,20 @@
 fileFormatVersion: 2
-guid: 4a0a89f5c823ac647a449a1cb287986d
+guid: 370382bd57569814395500729441c85d
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: Material.017
-    2100002: glass
-    2100004: emission
+    2100000: Material.001
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Base Paleta.001
-    2186277476908879412: ImportLogs
-  externalObjects: {}
+    4300000: INSANO 2.001
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: bb5b60dcb5eae124b8a7ae287d63805e, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -63,7 +65,7 @@ ModelImporter:
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
-    useFileScale: 1
+    useFileScale: 0
     previousCalculatedGlobalScale: 1
     hasPreviousCalculatedGlobalScale: 0
   tangentSpace:

@@ -249,7 +249,7 @@ MonoBehaviour:
   DBuilding: {fileID: 5277012070571644982}
   MaxHealth: 50
   DefaultMat: {fileID: 0}
-  DamageMaterial: {fileID: 0}
+  DamageMaterial: {fileID: 2100000, guid: 38b52ac1e2fad0044a4d34fdbbd9d012, type: 2}
   Models:
   - {fileID: 5277012070270242334}
   - {fileID: 5277012070270242330}
@@ -257,7 +257,7 @@ MonoBehaviour:
   Reward: 500
   PM: {fileID: 0}
   DeathSystem: {fileID: 0}
-  MatTime: 0
+  MatTime: 0.09
 --- !u!65 &5277012069620011932
 BoxCollider:
   m_ObjectHideFlags: 0

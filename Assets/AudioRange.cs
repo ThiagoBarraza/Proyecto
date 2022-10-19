@@ -18,7 +18,7 @@ public class AudioRange : MonoBehaviour
         
     }
 
-    void OnTriggerenter(|)
+    void OnTriggerEnter()
     {
 
     }

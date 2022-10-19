@@ -32,7 +32,12 @@ ModelImporter:
     4300006: Platform.L
     4300008: Turret.L
     2186277476908879412: ImportLogs
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: 193cc52d11118c149973f8e475036722, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

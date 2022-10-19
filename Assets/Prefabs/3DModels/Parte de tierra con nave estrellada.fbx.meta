@@ -1,25 +1,15 @@
 fileFormatVersion: 2
-guid: d48c6fe58b2df944b99957871e76f35e
+guid: 0b51d6368c0410f4e9948650bc379163
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: Material
+    2100000: Material.011
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Cylinder.007
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material
-    second: {fileID: 2100000, guid: 193cc52d11118c149973f8e475036722, type: 2}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Paleta
-    second: {fileID: 2800000, guid: cb942e0383645f04293c70df9a47ce10, type: 3}
+    4300000: NAVE ESTRELLADA PLANETA JUNTA
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
@@ -50,7 +40,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 0.2
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1

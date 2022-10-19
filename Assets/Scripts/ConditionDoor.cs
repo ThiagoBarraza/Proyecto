@@ -24,7 +24,6 @@ public class ConditionDoor : MonoBehaviour
         if (!Trigg.activeInHierarchy)
         {
             OpenDoors();
-            Debug.Log("Condition");
         }
     }
 
