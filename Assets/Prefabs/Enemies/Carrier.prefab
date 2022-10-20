@@ -87,7 +87,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 074949750387a98458c75403971939f8, type: 3}
+  - {fileID: 2100000, guid: 193cc52d11118c149973f8e475036722, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -164,7 +164,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 074949750387a98458c75403971939f8, type: 3}
+  - {fileID: 2100000, guid: 193cc52d11118c149973f8e475036722, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -241,7 +241,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 074949750387a98458c75403971939f8, type: 3}
+  - {fileID: 2100000, guid: 193cc52d11118c149973f8e475036722, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -401,9 +401,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DBuilding: {fileID: 0}
   MaxHealth: 300
+  DefaultMat: {fileID: 0}
+  DamageMaterial: {fileID: 0}
+  Models: []
   Fire: {fileID: 0}
   Reward: 1200
   PM: {fileID: 0}
+  DeathSystem: {fileID: 0}
+  MatTime: 0.09
 --- !u!1 &33660310983091581
 GameObject:
   m_ObjectHideFlags: 0
@@ -461,7 +466,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 074949750387a98458c75403971939f8, type: 3}
+  - {fileID: 2100000, guid: 8e9a7e5c434d9ce4fb485494c9be23ee, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -538,7 +543,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 074949750387a98458c75403971939f8, type: 3}
+  - {fileID: 2100000, guid: 193cc52d11118c149973f8e475036722, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

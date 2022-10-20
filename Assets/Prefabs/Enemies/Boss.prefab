@@ -780,9 +780,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DBuilding: {fileID: 0}
   MaxHealth: 120
+  DefaultMat: {fileID: 0}
+  DamageMaterial: {fileID: 2100000, guid: 38b52ac1e2fad0044a4d34fdbbd9d012, type: 2}
+  Models: []
   Fire: {fileID: 7306507650133756822}
   Reward: 1200
   PM: {fileID: 0}
+  DeathSystem: {fileID: 0}
+  MatTime: 0.09
 --- !u!1 &3568431183870046829
 GameObject:
   m_ObjectHideFlags: 0

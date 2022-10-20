@@ -691,7 +691,7 @@ MonoBehaviour:
   PM: {fileID: 0}
   DeathSystem: {fileID: 4524040305833974665, guid: b886c371fe5eec24cb2f03e53c04ca9d,
     type: 3}
-  MatTime: 1
+  MatTime: 0.09
 --- !u!82 &82977331718363138
 AudioSource:
   m_ObjectHideFlags: 0
