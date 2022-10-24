@@ -29,7 +29,6 @@ public class PMovement : MonoBehaviour
     void Start()
     {
         ActualHP = MaxHP;
-        rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame

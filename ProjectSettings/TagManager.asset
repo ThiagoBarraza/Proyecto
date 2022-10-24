@@ -17,6 +17,8 @@ TagManager:
   - OMUI
   - CSUI
   - DFUI
+  - CoreBuilding
+  - VUI
   layers:
   - Default
   - TransparentFX
