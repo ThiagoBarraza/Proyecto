@@ -78,7 +78,7 @@ public class PMovement : MonoBehaviour
 
         if (col.gameObject.name == "Xplosion")
         {
-            ActualHP -= 3;
+            ActualHP -= 5;
         }
     }
 

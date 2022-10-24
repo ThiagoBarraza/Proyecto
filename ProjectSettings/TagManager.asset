@@ -16,6 +16,7 @@ TagManager:
   - GAU
   - OMUI
   - CSUI
+  - DFUI
   layers:
   - Default
   - TransparentFX
