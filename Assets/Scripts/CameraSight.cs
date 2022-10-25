@@ -8,19 +8,26 @@ public class CameraSight : MonoBehaviour
     public Vector3 Location;
     [SerializeField] GameObject DebugObj2;
     [SerializeField] Transform DebugObj;
+    [SerializeField] Pause PS;
     // Start is called before the first frame update
     void Start()
     {
-        
+        PS = FindObjectOfType<Pause>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        var collider = GetComponent<SphereCollider>();
+        if (!PS.gameIsPaused)
+        {
+            var collider = GetComponent<SphereCollider>();
 
-        Vector3 closestPoint = collider.ClosestPoint(DebugObj.position);
-        DebugObj2.transform.position = closestPoint;
+            Vector3 closestPoint = collider.ClosestPoint(DebugObj.position);
+            if (DebugObj2)
+            {
+                DebugObj2.transform.position = closestPoint;
+            }
+        }
     }
 
     public void OnDrawGizmos()

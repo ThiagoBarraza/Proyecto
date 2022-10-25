@@ -6,12 +6,12 @@ using UnityEngine.UI;
 
 public class PMovement : MonoBehaviour
 {
-    
+
     //Variables
-    
+
     [SerializeField] private float ZSpeed; //Moving forward speed
     [SerializeField] private float XSpeed; //Moving backwards 
-    public float ActualHP; 
+    public float ActualHP;
     public float MaxHP;
     [SerializeField] private float AddedRotation = 90;
 
@@ -25,6 +25,8 @@ public class PMovement : MonoBehaviour
     [SerializeField] private GameObject Model;
     public bool Defeated;
 
+    public Pause PS;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,26 +36,44 @@ public class PMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(ActualHP < 1)
+        if (PS.gameIsPaused)
         {
-            Defeated = true;
+            
+        }
+        else
+        {
+            Model.SetActive(true);
+        }
+        
+        if (ActualHP < 1)
+        {
             Model.SetActive(false);
+            Defeated = true;
+            PS.gameIsPaused = true;
         }
-        if (Input.GetKey(KeyCode.W) && !Defeated)
+
+        if (PS.gameIsPaused)
         {
-            transform.Translate(0, 0, ZSpeed);
+            
         }
-        if (Input.GetKey(KeyCode.S) && !Defeated)
+        else
         {
-            transform.Translate(0, 0, -ZSpeed);
-        }
-        if (Input.GetKey(KeyCode.D) && !Defeated)
-        {
-            transform.Translate(XSpeed, 0, 0);
-        }
-        if (Input.GetKey(KeyCode.A) && !Defeated)
-        {
-            transform.Translate(-XSpeed, 0, 0);
+            if (Input.GetKey(KeyCode.W))
+            {
+                transform.Translate(0, 0, ZSpeed);
+            }
+            if (Input.GetKey(KeyCode.S))
+            {
+                transform.Translate(0, 0, -ZSpeed);
+            }
+            if (Input.GetKey(KeyCode.D))
+            {
+                transform.Translate(XSpeed, 0, 0);
+            }
+            if (Input.GetKey(KeyCode.A))
+            {
+                transform.Translate(-XSpeed, 0, 0);
+            }
         }
 
         Vector3 lookPos = CT.worldPosition - transform.position;
