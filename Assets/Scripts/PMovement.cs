@@ -74,15 +74,17 @@ public class PMovement : MonoBehaviour
             {
                 transform.Translate(-XSpeed, 0, 0);
             }
+
+            Vector3 lookPos = CT.worldPosition - transform.position;
+            Quaternion lookRot = Quaternion.LookRotation(lookPos, Vector3.up);
+            float eulerY = lookRot.eulerAngles.y;
+            Quaternion rotation = Quaternion.Euler(0, eulerY + AddedRotation, 0);
+            Model.transform.rotation = rotation;
         }
 
-        Vector3 lookPos = CT.worldPosition - transform.position;
-        Quaternion lookRot = Quaternion.LookRotation(lookPos, Vector3.up);
-        float eulerY = lookRot.eulerAngles.y;
-        Quaternion rotation = Quaternion.Euler(0, eulerY + AddedRotation, 0);
-        Model.transform.rotation = rotation;
+        
 
-        PointText.text = "Ptos: " + Points;
+        PointText.text = "Score: " + Points;
     }
 
     void OnCollisionEnter(Collision col)

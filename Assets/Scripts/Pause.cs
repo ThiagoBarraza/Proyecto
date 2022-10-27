@@ -6,10 +6,17 @@ public class Pause : MonoBehaviour
 {
     // Start is called before the first frame update
     [SerializeField] public bool gameIsPaused;
+    [SerializeField] GameObject[] PSUI;
+    public GameObject cubo;
 
     void Start()
     {
-        
+        PSUI = GameObject.FindGameObjectsWithTag("PSUI");
+
+        for (int i = 0; i < PSUI.Length; i++)
+        {
+            PSUI[i].SetActive(false);
+        }
     }
 
     // Update is called once per frame
@@ -19,6 +26,22 @@ public class Pause : MonoBehaviour
         {
             gameIsPaused = !gameIsPaused;
             PauseGame();
+
+            if (gameIsPaused == false)
+            {
+                for (int i = 0; i < PSUI.Length; i++)
+                {
+                    PSUI[i].SetActive(false);
+                }
+            }
+        }
+
+        if (gameIsPaused)
+        {
+            for(int i = 0; i< PSUI.Length; i++)
+            {
+                PSUI[i].SetActive(true);
+            }
         }
     }
 
@@ -31,6 +54,14 @@ public class Pause : MonoBehaviour
         else
         {
             Time.timeScale = 1;
+        }
+    }
+
+    public void BackPause()
+    {
+        for (int i = 0; i < PSUI.Length; i++)
+        {
+            PSUI[i].SetActive(false);
         }
     }
 }

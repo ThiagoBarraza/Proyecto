@@ -19,6 +19,7 @@ TagManager:
   - DFUI
   - CoreBuilding
   - VUI
+  - PSUI
   layers:
   - Default
   - TransparentFX
