@@ -34,15 +34,17 @@ public class Pause : MonoBehaviour
                     PSUI[i].SetActive(false);
                 }
             }
-        }
 
-        if (gameIsPaused)
-        {
-            for(int i = 0; i< PSUI.Length; i++)
+            if (gameIsPaused)
             {
-                PSUI[i].SetActive(true);
+                for (int i = 0; i < PSUI.Length; i++)
+                {
+                    PSUI[i].SetActive(true);
+                }
             }
         }
+
+        
     }
 
     void PauseGame()
@@ -57,8 +59,12 @@ public class Pause : MonoBehaviour
         }
     }
 
+    
+
     public void BackPause()
     {
+        gameIsPaused = !gameIsPaused;
+        PauseGame();
         for (int i = 0; i < PSUI.Length; i++)
         {
             PSUI[i].SetActive(false);
