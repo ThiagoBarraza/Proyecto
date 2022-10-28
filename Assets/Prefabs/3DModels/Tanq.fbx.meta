@@ -1,5 +1,7 @@
 fileFormatVersion: 2
 guid: f662ee1b0be1fc84799f1f70aa6b6528
+labels:
+- Enemy
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -50,7 +52,12 @@ ModelImporter:
     9500000: //RootNode
     13700000: Cube.001
     2186277476908879412: ImportLogs
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material
+    second: {fileID: 2100000, guid: 193cc52d11118c149973f8e475036722, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

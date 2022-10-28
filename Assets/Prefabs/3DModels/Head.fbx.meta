@@ -1,32 +1,32 @@
 fileFormatVersion: 2
-guid: 94a87246b5d686d4e928b049af283a19
+guid: 75d1216cfda6ca14a9f4077c7a98686c
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: Plane.005
-    100002: Plane.008
-    100004: Plane.009
+    100000: Cube
+    100002: Cube.002
+    100004: Cube.003
     100006: //RootNode
-    400000: Plane.005
-    400002: Plane.008
-    400004: Plane.009
+    400000: Cube
+    400002: Cube.002
+    400004: Cube.003
     400006: //RootNode
-    2100000: No Name
-    2300000: Plane.005
-    2300002: Plane.008
-    2300004: Plane.009
-    3300000: Plane.005
-    3300002: Plane.008
-    3300004: Plane.009
-    4300000: Plane.009
-    4300002: Plane.005
-    4300004: Plane.008
+    2100000: Material.001
+    2300000: Cube
+    2300002: Cube.002
+    2300004: Cube.003
+    3300000: Cube
+    3300002: Cube.002
+    3300004: Cube.003
+    4300000: Cube
+    4300002: Cube.002
+    4300004: Cube.003
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: No Name
-    second: {fileID: 2100000, guid: 00b0c862c978fd943b422119e0652ff4, type: 2}
+      name: Material.001
+    second: {fileID: 2100000, guid: 8e9a7e5c434d9ce4fb485494c9be23ee, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -63,8 +63,8 @@ ModelImporter:
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
-    importCameras: 1
-    importLights: 1
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
@@ -88,7 +88,7 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
-  importAnimation: 1
+  importAnimation: 0
   copyAvatar: 0
   humanDescription:
     serializedVersion: 2
