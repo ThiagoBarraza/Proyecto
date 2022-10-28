@@ -18,16 +18,16 @@ public class CameraSight : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!PS.gameIsPaused)
-        {
-            var collider = GetComponent<SphereCollider>();
+        
+        
+        var collider = GetComponent<SphereCollider>();
 
-            Vector3 closestPoint = collider.ClosestPoint(DebugObj.position);
-            if (DebugObj2)
-            {
+        Vector3 closestPoint = collider.ClosestPoint(DebugObj.position);
+        if (DebugObj2)
+        {
                 DebugObj2.transform.position = closestPoint;
-            }
         }
+        
     }
 
     public void OnDrawGizmos()

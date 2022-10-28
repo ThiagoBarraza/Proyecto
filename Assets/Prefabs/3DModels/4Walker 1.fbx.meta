@@ -1,0 +1,184 @@
+fileFormatVersion: 2
+guid: a264fd15174c22543be7e2fb2d182a53
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Armature
+    100004: Core
+    100006: FootBack.L
+    100008: FootBack.L_end
+    100010: FootBack.R
+    100012: FootBack.R_end
+    100014: FootFront.L
+    100016: FootFront.L_end
+    100018: FootFront.R
+    100020: FootFront.R_end
+    100022: LegBackA.L
+    100024: LegBackA.R
+    100026: LegBackB.L
+    100028: LegBackB.R
+    100030: LegBackC.L
+    100032: LegBackC.L_end
+    100034: LegBackC.R
+    100036: LegBackC.R_end
+    100038: LegFrontA.L
+    100040: LegFrontA.R
+    100042: LegFrontB.L
+    100044: LegFrontB.R
+    100046: LegFrontC.L
+    100048: LegFrontC.L_end
+    100050: LegFrontC.R
+    100052: LegFrontC.R_end
+    100054: Legs
+    100056: PoleBack.L
+    100058: PoleBack.L_end
+    100060: PoleBack.R
+    100062: PoleBack.R_end
+    100064: PoleFront.L
+    100066: PoleFront.L_end
+    100068: PoleFront.R
+    100070: PoleFront.R_end
+    100072: TargetBack.L
+    100074: TargetBack.L_end
+    100076: TargetBack.R
+    100078: TargetBack.R_end
+    100080: TargetFront.L
+    100082: TargetFront.L_end
+    100084: TargetFront.R
+    100086: TargetFront.R_end
+    400000: //RootNode
+    400002: Armature
+    400004: Core
+    400006: FootBack.L
+    400008: FootBack.L_end
+    400010: FootBack.R
+    400012: FootBack.R_end
+    400014: FootFront.L
+    400016: FootFront.L_end
+    400018: FootFront.R
+    400020: FootFront.R_end
+    400022: LegBackA.L
+    400024: LegBackA.R
+    400026: LegBackB.L
+    400028: LegBackB.R
+    400030: LegBackC.L
+    400032: LegBackC.L_end
+    400034: LegBackC.R
+    400036: LegBackC.R_end
+    400038: LegFrontA.L
+    400040: LegFrontA.R
+    400042: LegFrontB.L
+    400044: LegFrontB.R
+    400046: LegFrontC.L
+    400048: LegFrontC.L_end
+    400050: LegFrontC.R
+    400052: LegFrontC.R_end
+    400054: Legs
+    400056: PoleBack.L
+    400058: PoleBack.L_end
+    400060: PoleBack.R
+    400062: PoleBack.R_end
+    400064: PoleFront.L
+    400066: PoleFront.L_end
+    400068: PoleFront.R
+    400070: PoleFront.R_end
+    400072: TargetBack.L
+    400074: TargetBack.L_end
+    400076: TargetBack.R
+    400078: TargetBack.R_end
+    400080: TargetFront.L
+    400082: TargetFront.L_end
+    400084: TargetFront.R
+    400086: TargetFront.R_end
+    2100000: Material
+    4300000: Legs
+    7400000: Armature|Test.001Action
+    9500000: //RootNode
+    13700000: Legs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
