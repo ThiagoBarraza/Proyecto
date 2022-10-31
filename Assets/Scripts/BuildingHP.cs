@@ -105,9 +105,11 @@ public class BuildingHP : MonoBehaviour
                 DBuilding.SetActive(true);
             }
             gameObject.SetActive(false);
+            for (int e = 0; e < Models.Length; e++)
+            {
+                Models[e].SetActive(false);
+            }
         }
-
-        
     }
 
     void OnCollisionEnter(Collision col)

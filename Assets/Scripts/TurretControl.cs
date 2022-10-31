@@ -57,7 +57,7 @@ public class TurretControl : MonoBehaviour
                 }
                 b.transform.eulerAngles += new Vector3(Random.Range(-Innacuracy, Innacuracy), Random.Range(-Innacuracy, Innacuracy), Random.Range(-Innacuracy, Innacuracy));
                 
-                CRTime = RTime;
+
                 CRTime = RTime;
                 Debug.Log("Shot");
             }

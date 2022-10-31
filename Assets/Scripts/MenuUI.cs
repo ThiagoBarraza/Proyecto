@@ -55,6 +55,10 @@ public class MenuUI : MonoBehaviour
         {
             LSUI[i].SetActive(!state);
         }
+        for (int i = 0; i < CSUI.Length; i++)
+        {
+            CSUI[i].SetActive(false);
+        }
     }
 
     public void OpenOptionsMenu(bool state)
@@ -66,6 +70,10 @@ public class MenuUI : MonoBehaviour
         for (int i = 0; i < OMUI.Length; i++)
         {
             OMUI[i].SetActive(!state);
+        }
+        for (int i = 0; i < CSUI.Length; i++)
+        {
+            CSUI[i].SetActive(false);
         }
     }
 

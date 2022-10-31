@@ -1,102 +1,52 @@
 fileFormatVersion: 2
-guid: a264fd15174c22543be7e2fb2d182a53
+guid: f84710c0cefc7df44aac863781e454e1
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: Armature
-    100004: Core
-    100006: FootBack.L
-    100008: FootBack.L_end
-    100010: FootBack.R
-    100012: FootBack.R_end
-    100014: FootFront.L
-    100016: FootFront.L_end
-    100018: FootFront.R
-    100020: FootFront.R_end
-    100022: LegBackA.L
-    100024: LegBackA.R
-    100026: LegBackB.L
-    100028: LegBackB.R
-    100030: LegBackC.L
-    100032: LegBackC.L_end
-    100034: LegBackC.R
-    100036: LegBackC.R_end
-    100038: LegFrontA.L
-    100040: LegFrontA.R
-    100042: LegFrontB.L
-    100044: LegFrontB.R
-    100046: LegFrontC.L
-    100048: LegFrontC.L_end
-    100050: LegFrontC.R
-    100052: LegFrontC.R_end
-    100054: Legs
-    100056: PoleBack.L
-    100058: PoleBack.L_end
-    100060: PoleBack.R
-    100062: PoleBack.R_end
-    100064: PoleFront.L
-    100066: PoleFront.L_end
-    100068: PoleFront.R
-    100070: PoleFront.R_end
-    100072: TargetBack.L
-    100074: TargetBack.L_end
-    100076: TargetBack.R
-    100078: TargetBack.R_end
-    100080: TargetFront.L
-    100082: TargetFront.L_end
-    100084: TargetFront.R
-    100086: TargetFront.R_end
-    400000: //RootNode
-    400002: Armature
-    400004: Core
-    400006: FootBack.L
-    400008: FootBack.L_end
-    400010: FootBack.R
-    400012: FootBack.R_end
-    400014: FootFront.L
-    400016: FootFront.L_end
-    400018: FootFront.R
-    400020: FootFront.R_end
-    400022: LegBackA.L
-    400024: LegBackA.R
-    400026: LegBackB.L
-    400028: LegBackB.R
-    400030: LegBackC.L
-    400032: LegBackC.L_end
-    400034: LegBackC.R
-    400036: LegBackC.R_end
-    400038: LegFrontA.L
-    400040: LegFrontA.R
-    400042: LegFrontB.L
-    400044: LegFrontB.R
-    400046: LegFrontC.L
-    400048: LegFrontC.L_end
-    400050: LegFrontC.R
-    400052: LegFrontC.R_end
-    400054: Legs
-    400056: PoleBack.L
-    400058: PoleBack.L_end
-    400060: PoleBack.R
-    400062: PoleBack.R_end
-    400064: PoleFront.L
-    400066: PoleFront.L_end
-    400068: PoleFront.R
-    400070: PoleFront.R_end
-    400072: TargetBack.L
-    400074: TargetBack.L_end
-    400076: TargetBack.R
-    400078: TargetBack.R_end
-    400080: TargetFront.L
-    400082: TargetFront.L_end
-    400084: TargetFront.R
-    400086: TargetFront.R_end
-    2100000: Material
-    4300000: Legs
-    7400000: Armature|Test.001Action
+    100000: Armature.004
+    100002: Bone
+    100004: Bone.001
+    100006: Bone.002
+    100008: Bone.003
+    100010: Bone.003_end
+    100012: Bone.005
+    100014: Bone.005_end
+    100016: Bone.006
+    100018: Bone.006_end
+    100020: Bone.007
+    100022: Bone.007_end
+    100024: Bone.009
+    100026: Bone.009_end
+    100028: Cube.005
+    100030: //RootNode
+    400000: Armature.004
+    400002: Bone
+    400004: Bone.001
+    400006: Bone.002
+    400008: Bone.003
+    400010: Bone.003_end
+    400012: Bone.005
+    400014: Bone.005_end
+    400016: Bone.006
+    400018: Bone.006_end
+    400020: Bone.007
+    400022: Bone.007_end
+    400024: Bone.009
+    400026: Bone.009_end
+    400028: Cube.005
+    400030: //RootNode
+    2100000: Material.016
+    4300000: Cube.005
+    7400000: Armature.004|ArmatureAction.004
     9500000: //RootNode
-    13700000: Legs
-  externalObjects: {}
+    13700000: Cube.005
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.016
+    second: {fileID: 2100000, guid: 8e9a7e5c434d9ce4fb485494c9be23ee, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -125,10 +75,10 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Armature|Test.001Action
-      takeName: Armature|Test.001Action
+      name: Armature.004|ArmatureAction.004
+      takeName: Armature.004|ArmatureAction.004
       firstFrame: 0
-      lastFrame: 32
+      lastFrame: 80
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
