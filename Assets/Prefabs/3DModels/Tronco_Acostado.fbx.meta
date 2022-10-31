@@ -1,14 +1,14 @@
 fileFormatVersion: 2
-guid: 0b51d6368c0410f4e9948650bc379163
+guid: 981b1f1e7f027b44d81aeb0b35fec9ab
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: Material.011
+    2100000: Material.014
     2300000: //RootNode
     3300000: //RootNode
-    4300000: NAVE ESTRELLADA PLANETA JUNTA
+    4300000: Tronco acostado
   externalObjects: {}
   materials:
     importMaterials: 1
