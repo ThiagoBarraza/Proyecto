@@ -38,7 +38,7 @@ public class Ammo : MonoBehaviour
 
     void OnTriggerEnter(Collider col)
     {
-        if(gameObject.tag != "PlayerBullet")
+        if(gameObject.tag != "Ammo")
         {
             if (col.gameObject.tag == "Player")
             {
