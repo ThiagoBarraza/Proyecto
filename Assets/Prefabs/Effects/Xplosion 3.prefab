@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 114999244160430910}
   m_Layer: 0
   m_Name: Xplosion 3
-  m_TagString: Explosion
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

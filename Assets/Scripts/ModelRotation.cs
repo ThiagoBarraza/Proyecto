@@ -63,7 +63,7 @@ public class ModelRotation : MonoBehaviour
         }
         else
         {
-            //Anim.SetBool("IsWalkiing", false);
+            Anim.SetBool("IsWalkiing", false);
         }
         var targetPos = DebugObj3.transform.position;
         targetPos.y = Model.transform.position.y;

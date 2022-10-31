@@ -100,9 +100,14 @@ public class BuildingHP : MonoBehaviour
         if (Health <= 0)
         {
             PM.Points += Reward;
+            if (DeathSystem)
+            {
+                Instantiate(DeathSystem, gameObject.transform.position, Quaternion.identity);
+            }
             if (DBuilding)
             {
                 DBuilding.SetActive(true);
+                DBuilding.transform.parent = null;
             }
             gameObject.SetActive(false);
             for (int e = 0; e < Models.Length; e++)

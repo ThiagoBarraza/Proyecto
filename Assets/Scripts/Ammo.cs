@@ -8,6 +8,7 @@ public class Ammo : MonoBehaviour
     public float lifeTime;
     [SerializeField] GameObject ExplodesOnImpact;
     [HideInInspector] PMovement PM;
+    [SerializeField] int Damage;
     void Start()
     {
         if (ExplodesOnImpact)
@@ -42,7 +43,7 @@ public class Ammo : MonoBehaviour
         {
             if (col.gameObject.tag == "Player")
             {
-                PM.ActualHP -= 5;
+                PM.ActualHP -= Damage;
             }
         }
     }
