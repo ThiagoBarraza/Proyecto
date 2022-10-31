@@ -38,9 +38,12 @@ public class Ammo : MonoBehaviour
 
     void OnTriggerEnter(Collider col)
     {
-        if (col.gameObject.tag == "Player")
+        if(gameObject.tag != "PlayerBullet")
         {
-            PM.ActualHP -= 5;
+            if (col.gameObject.tag == "Player")
+            {
+                PM.ActualHP -= 5;
+            }
         }
     }
 }
