@@ -95,16 +95,12 @@ public class PMovement : MonoBehaviour
             ActualHP--;
         }
 
-        
-
-        if (col.gameObject.name == "Xplosion")
+        if (col.gameObject.tag == "TankAmmo")
         {
             ActualHP -= 5;
         }
-    }
+       
 
-    void OnTriggerEnter(Collider col)
-    {
         if (col.gameObject.tag == "Thunder")
         {
             ActualHP -= 3;

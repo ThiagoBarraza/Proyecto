@@ -2,12 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Ammo: MonoBehaviour
+public class Ammo : MonoBehaviour
 {
     public float speed;
     public float lifeTime;
+    [SerializeField] GameObject ExplodesOnImpact;
+    [HideInInspector] PMovement PM;
     void Start()
     {
+        if (ExplodesOnImpact)
+        {
+            PM = FindObjectOfType<PMovement>();
+        }
+        
         Destroy(gameObject, lifeTime);
     }
 
@@ -20,7 +27,20 @@ public class Ammo: MonoBehaviour
     {
         if (col.gameObject.tag != "Ground" && col.gameObject.tag != "Ammo" && col.gameObject.tag != "EnemyBullet")
         {
+            if (ExplodesOnImpact)
+            {
+                Vector3 Contacto = col.contacts[0].point;
+                Instantiate(ExplodesOnImpact, Contacto, Quaternion.identity);
+            }
             Destroy(gameObject);
+        }
+    }
+
+    void OnTriggerEnter(Collider col)
+    {
+        if (col.gameObject.tag == "Player")
+        {
+            PM.ActualHP -= 5;
         }
     }
 }

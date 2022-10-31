@@ -20,6 +20,7 @@ TagManager:
   - CoreBuilding
   - VUI
   - PSUI
+  - TankAmmo
   layers:
   - Default
   - TransparentFX
