@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.11279861, g: 0.06681789, b: 0.18244275, a: 1}
+  m_IndirectSpecularColor: {r: 0.11279992, g: 0.06681855, b: 0.18245679, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -360,7 +360,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &411683017
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1139,7 +1139,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e640ab30c2879864286efaf8cd0698d8, type: 2}
+  - {fileID: 2100000, guid: 1f4908c3fa6c52d49a864288265562a7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1176,7 +1176,7 @@ Transform:
   m_GameObject: {fileID: 745001812}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.5197353, y: -25.710846, z: 241}
-  m_LocalScale: {x: 539.4198, y: 431.99973, z: 539.4198}
+  m_LocalScale: {x: 562.12933, y: 401.91397, z: 539.4198}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
@@ -1581,7 +1581,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d4f6aa0bbb6ae414891a0da6661681aa, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b9516ff845a63f748b619e212f3a56a4, type: 3}
   m_Color: {r: 0.6438117, g: 0.6886792, b: 0.620461, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1601,7 +1601,7 @@ Transform:
   m_GameObject: {fileID: 1350039265}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 105, y: -28, z: 197}
-  m_LocalScale: {x: 23.444, y: 23.444, z: 0.23444}
+  m_LocalScale: {x: 27.122366, y: 27.122366, z: 0.27122363}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5

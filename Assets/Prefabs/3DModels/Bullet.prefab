@@ -182,7 +182,7 @@ Transform:
   m_GameObject: {fileID: 4645206136900975228}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 24.268993, y: 10.531508, z: -51.69143}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
+  m_LocalScale: {x: 0.125, y: 0.125, z: 0.25}
   m_Children:
   - {fileID: 3381105549545684738}
   - {fileID: 3381105549545684736}
@@ -205,6 +205,7 @@ MonoBehaviour:
   lifeTime: 0.6
   ExplodesOnImpact: {fileID: 4524040305833974665, guid: 5ac1b400a04600e43aebc0b9fabc5046,
     type: 3}
+  Damage: 0
 --- !u!54 &54560100149390888
 Rigidbody:
   m_ObjectHideFlags: 0
