@@ -574,7 +574,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f662ee1b0be1fc84799f1f70aa6b6528, type: 3}
+  - {fileID: 2100000, guid: 193cc52d11118c149973f8e475036722, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -741,7 +741,7 @@ Animator:
   m_GameObject: {fileID: 5706153005795379286}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: f662ee1b0be1fc84799f1f70aa6b6528, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1bc294303cf42e74594e36964b9e9869, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -774,7 +774,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 25
+  m_Radius: 30
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &5706153005485645425
 MonoBehaviour:
@@ -792,7 +792,7 @@ MonoBehaviour:
   Target: {fileID: 0}
   BulletSpawn1: {fileID: 5706153005721218503}
   BulletSpawn2: {fileID: 0}
-  Bullet: {fileID: 1323046119432620881, guid: 1d096017ee52d1a4ab3524af74c38899, type: 3}
+  Bullet: {fileID: 8577028307973389745, guid: 9d7cf7b34179334468c6eb23c746a5ed, type: 3}
   RTime: 2
   Innacuracy: 0.000000001
   RotationSpeed: 2

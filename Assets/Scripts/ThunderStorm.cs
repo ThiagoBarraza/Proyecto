@@ -42,6 +42,7 @@ public class ThunderStorm : MonoBehaviour
                 else
                 {
                     Instantiate(Thunder, Target.position, Quaternion.identity);
+                    PM.ActualHP -= 3;
                     ActualCooldown = Cooldown;
                 }
                 

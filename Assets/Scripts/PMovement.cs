@@ -89,21 +89,22 @@ public class PMovement : MonoBehaviour
 
     void OnCollisionEnter(Collision col)
     {
-        
-        if (col.gameObject.tag == "EnemyBullet")
-        {
-            ActualHP--;
-        }
+        string colision = col.gameObject.tag;
 
-        if (col.gameObject.tag == "TankAmmo")
+        switch (colision)
         {
-            ActualHP -= 5;
-        }
-       
-
-        if (col.gameObject.tag == "Thunder")
-        {
-            ActualHP -= 3;
+            case "EnemyBullet":
+                ActualHP--;
+                break;
+            case "TankAmmo":
+                ActualHP -= 5;
+                break;
+            case "Thunder":
+                ActualHP -= 3;
+                break;
+            case "DeathWall":
+                ActualHP -= 100;
+                break;
         }
     }
 }
