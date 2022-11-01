@@ -107,4 +107,16 @@ public class PMovement : MonoBehaviour
                 break;
         }
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        string Tcolision = other.gameObject.tag;
+
+        switch (Tcolision)
+        {
+            case "Thunder":
+                ActualHP -= 3;
+                break;
+        }
+    }
 }

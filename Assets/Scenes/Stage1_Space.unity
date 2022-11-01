@@ -10540,7 +10540,7 @@ MonoBehaviour:
   BulletSpawn1: {fileID: 232932699}
   BulletSpawn2: {fileID: 0}
   Bullet: {fileID: 5874701743201085175, guid: 397a6dbfc905a15488940e0ac764566d, type: 3}
-  RTime: 12
+  RTime: 10
   Innacuracy: 0
   RotationSpeed: 0
 --- !u!135 &1004741059
@@ -10589,7 +10589,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DBuilding: {fileID: 0}
-  MaxHealth: 10
+  MaxHealth: 120
   DefaultMat: {fileID: 0}
   DamageMaterial: {fileID: 2100000, guid: 5792e0dcaec057742acfdb649ed4a700, type: 2}
   Models:
