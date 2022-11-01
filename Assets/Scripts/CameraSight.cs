@@ -30,13 +30,4 @@ public class CameraSight : MonoBehaviour
         
     }
 
-    public void OnDrawGizmos()
-    {
-        //var collider = GetComponent<SphereCollider>();
-
-        //Vector3 closestPoint = collider.ClosestPoint(DebugObj.position);
-        //DebugObj2.transform.position = closestPoint;
-        //Gizmos.DrawSphere(Location, 0.1f);
-        //Gizmos.DrawWireSphere(closestPoint, 0.1f);
-    }
 }

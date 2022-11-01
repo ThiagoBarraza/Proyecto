@@ -39,9 +39,9 @@ public class Ammo : MonoBehaviour
 
     void OnTriggerEnter(Collider col)
     {
-        if(gameObject.tag != "Ammo")
+        if (gameObject.CompareTag("Ammo"))
         {
-            if (col.gameObject.tag == "Player")
+            if (col.gameObject.CompareTag("Player"))
             {
                 PM.ActualHP -= Damage;
             }

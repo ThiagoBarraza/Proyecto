@@ -11,14 +11,6 @@ public class ConditionDoor : MonoBehaviour
     [SerializeField] Vector3 DoorRFinalPos;
     [SerializeField] GameObject DoorR;
     [SerializeField] GameObject Trigg;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
     void Update()
     {
         if (!Trigg.activeInHierarchy)

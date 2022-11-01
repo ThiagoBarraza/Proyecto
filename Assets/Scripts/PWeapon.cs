@@ -9,7 +9,7 @@ public class PWeapon : MonoBehaviour
     public float reloadTime;
     public float inacuracy;
     float currReloadTime;
-    bool canShoot = true;
+    //bool canShoot = true;
     void Start()
     {
         currReloadTime = reloadTime;

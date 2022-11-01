@@ -12,7 +12,7 @@ public class TurretControl : MonoBehaviour
     public float RTime;
     float CRTime;
     public float Innacuracy;
-    bool CanShoot = true;
+    //bool CanShoot = true;
     //GameObject Foundation;
     bool OnRange = false;
     public float RotationSpeed;
@@ -66,7 +66,7 @@ public class TurretControl : MonoBehaviour
 
     void OnTriggerEnter(Collider col)
     {
-        if(col.gameObject.tag == "Player")
+        if(col.gameObject.CompareTag("Player"))
         {
             OnRange = true;
             Debug.Log("Player is on range");
@@ -75,7 +75,7 @@ public class TurretControl : MonoBehaviour
 
     void OnTriggerExit(Collider col)
     {
-        if (col.gameObject.tag == "Player")
+        if (col.gameObject.CompareTag("Player"))
         {
             OnRange = false;
         }

@@ -14,7 +14,6 @@ public class HPBar : MonoBehaviour
     void Start()
     {
         Display = GetComponent<Image>();
-        GameObject player = GameObject.FindWithTag("Player");
         if (PM)
         {
             PM = GameObject.FindObjectOfType<PMovement>();

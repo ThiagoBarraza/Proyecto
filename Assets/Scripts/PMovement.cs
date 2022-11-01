@@ -20,7 +20,6 @@ public class PMovement : MonoBehaviour
 
     //Resources
 
-    Rigidbody rb;
     public CameraTest CT;
     [SerializeField] private GameObject Model;
     public bool Defeated;

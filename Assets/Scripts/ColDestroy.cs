@@ -7,21 +7,11 @@ public class ColDestroy : MonoBehaviour
     [SerializeField] GameObject GameBundle;
     [SerializeField] ParticleSystem DeathSystem;
     
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     void OnCollisionEnter(Collision col)
     {
-        if(col.gameObject.tag == "Player")
+        if(col.gameObject.CompareTag("Player"))
         {
             if (DeathSystem)
             {

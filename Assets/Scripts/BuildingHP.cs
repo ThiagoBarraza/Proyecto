@@ -54,7 +54,6 @@ public class BuildingHP : MonoBehaviour
     void Start()
     {
         rend = GetComponent<Renderer>();
-        GameObject player = GameObject.FindWithTag("Player");
         PM = GameObject.FindObjectOfType<PMovement>();
         Health = MaxHealth;
         if (DBuilding)

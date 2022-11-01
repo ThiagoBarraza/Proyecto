@@ -5,7 +5,7 @@ using UnityEngine;
 public class Pause : MonoBehaviour
 {
     // Start is called before the first frame update
-    [SerializeField] public bool gameIsPaused;
+    public bool gameIsPaused;
     [SerializeField] GameObject[] PSUI;
     public GameObject cubo;
 

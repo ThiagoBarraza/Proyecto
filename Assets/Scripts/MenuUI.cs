@@ -34,12 +34,6 @@ public class MenuUI : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void LoadGame(string Scene)
     {
         SceneManager.LoadScene(Scene);
