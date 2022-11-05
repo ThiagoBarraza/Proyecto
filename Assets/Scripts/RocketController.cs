@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using EZCameraShake;
 
 public class RocketController : MonoBehaviour
 {
@@ -48,6 +49,7 @@ public class RocketController : MonoBehaviour
             
             Vector3 Contacto = col.contacts[0].point;
             Instantiate(Xplosion, Contacto, Quaternion.identity);
+            CameraShaker.Instance.ShakeOnce(2f, 10f, 0f, 3f);
             Destroy(gameObject);
         }
     }

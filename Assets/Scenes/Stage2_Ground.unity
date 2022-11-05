@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4465782, g: 0.49641252, b: 0.5748167, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3212,6 +3212,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb7d48f52cfa0e4479e6f42dfb3a4a47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PosInicial: {x: 0, y: 0, z: 0}
+  speed: 0
 --- !u!1001 &123707118
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7238,6 +7240,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb7d48f52cfa0e4479e6f42dfb3a4a47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PosInicial: {x: 0, y: 0, z: 0}
+  speed: 0
 --- !u!23 &256451277
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14230,6 +14234,7 @@ GameObject:
   m_Component:
   - component: {fileID: 593635309}
   - component: {fileID: 593635308}
+  - component: {fileID: 593635307}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -14237,6 +14242,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &593635307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 593635306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ab8353b5ebd32545867da143199a814, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DefaultPosInfluence: {x: 0.15, y: 0.15, z: 0.15}
+  DefaultRotInfluence: {x: 1, y: 1, z: 1}
+  RestPositionOffset: {x: 0, y: 15, z: -10}
+  RestRotationOffset: {x: 45, y: 0, z: 0}
 --- !u!20 &593635308
 Camera:
   m_ObjectHideFlags: 0
@@ -49516,6 +49537,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb7d48f52cfa0e4479e6f42dfb3a4a47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PosInicial: {x: 0, y: 0, z: 0}
+  speed: 0
 --- !u!23 &1811035442
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -58061,6 +58084,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Artly
+      objectReference: {fileID: 0}
+    - target: {fileID: 3842606547471781309, guid: 1fce6a15fbb19c941893bbc7339efd0f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 3842606547471781309, guid: 1fce6a15fbb19c941893bbc7339efd0f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 3842606547711244525, guid: 1fce6a15fbb19c941893bbc7339efd0f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 3842606547711244525, guid: 1fce6a15fbb19c941893bbc7339efd0f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.28
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1fce6a15fbb19c941893bbc7339efd0f, type: 3}

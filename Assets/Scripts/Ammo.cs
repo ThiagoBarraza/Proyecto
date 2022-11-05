@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using EZCameraShake;
 
 public class Ammo : MonoBehaviour
 {
@@ -21,7 +22,8 @@ public class Ammo : MonoBehaviour
 
     void Update()
     {
-        transform.position += transform.forward * speed;
+        transform.position += transform.forward * speed; 
+        
     }
 
     void OnCollisionEnter(Collision col)
@@ -33,6 +35,7 @@ public class Ammo : MonoBehaviour
                 Vector3 Contacto = col.contacts[0].point;
                 Instantiate(ExplodesOnImpact, Contacto, Quaternion.identity);
             }
+            
             Destroy(gameObject);
         }
     }
