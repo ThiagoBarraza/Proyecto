@@ -132,6 +132,16 @@ public class BuildingHP : MonoBehaviour
 
         if (col.gameObject.tag == "Rocket")
         {
+            //Health -= 15;
+
+            Debug.Log("Remaining health" + Health);
+        }
+    }
+
+    void OnTriggerEnter(Collider col)
+    {
+        if (col.gameObject.CompareTag("Hammo"))
+        {
             Health -= 15;
 
             Debug.Log("Remaining health" + Health);

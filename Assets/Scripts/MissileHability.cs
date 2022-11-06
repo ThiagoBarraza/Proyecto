@@ -32,7 +32,7 @@ public class MissileHability : MonoBehaviour
             {
                 for (int i = 0; i < MissileSpawn.Length; i++)
                 {
-                    var b = Instantiate(Missile, MissileSpawn[i].position, MissileSpawn[i].rotation);
+                    Instantiate(Missile, MissileSpawn[i].position, MissileSpawn[i].rotation);
                     ActualCooldown = Cooldown;
                 }
             }

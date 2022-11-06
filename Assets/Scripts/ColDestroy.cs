@@ -15,7 +15,7 @@ public class ColDestroy : MonoBehaviour
         {
             if (DeathSystem)
             {
-                Instantiate(DeathSystem, gameObject.transform);
+                Instantiate(DeathSystem, gameObject.transform.position, Quaternion.identity);
             }
             
             if (GameBundle)
