@@ -83,7 +83,7 @@ public class PMovement : MonoBehaviour
 
         
 
-        PointText.text = "Score: " + Points;
+        PointText.text = "" + Points;
     }
 
     void OnCollisionEnter(Collision col)
