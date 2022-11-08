@@ -669,6 +669,7 @@ GameObject:
   m_Component:
   - component: {fileID: 59856413}
   - component: {fileID: 59856414}
+  - component: {fileID: 59856415}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -706,6 +707,102 @@ MonoBehaviour:
   bulletSpawn: {fileID: 59856413}
   reloadTime: 0.2
   inacuracy: 0
+--- !u!82 &59856415
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 59856412}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: e7696ff47b285fd4fbb3ad81adfa4b7f, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!4 &63798436 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 173b5432893fd904182337f256cf0a7a,
@@ -2967,7 +3064,7 @@ PrefabInstance:
     - target: {fileID: 33660310982932823, guid: 1377b2219324a0548adfaf605b7be4c8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 33
+      value: 34
       objectReference: {fileID: 0}
     - target: {fileID: 33660310982932823, guid: 1377b2219324a0548adfaf605b7be4c8,
         type: 3}
@@ -5580,6 +5677,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 29608582}
   - {fileID: 675415503}
   - {fileID: 1161782325}
   - {fileID: 1016714663}
@@ -5592,97 +5690,92 @@ Transform:
   - {fileID: 714292217}
   - {fileID: 1682274183}
   - {fileID: 320377714}
-  - {fileID: 606130268}
-  - {fileID: 343920169}
-  - {fileID: 516402641}
-  - {fileID: 911564689}
-  - {fileID: 1637518336}
-  - {fileID: 159269379}
-  - {fileID: 1518960404}
-  - {fileID: 29608582}
   - {fileID: 507923833}
+  - {fileID: 343920169}
+  - {fileID: 606130268}
+  - {fileID: 516402641}
   - {fileID: 1612289925}
-  - {fileID: 810203371}
   - {fileID: 405713964}
   - {fileID: 213530324}
-  - {fileID: 1060638118}
+  - {fileID: 810203371}
+  - {fileID: 159269379}
   - {fileID: 1202099566}
+  - {fileID: 1637518336}
   - {fileID: 5938887}
   - {fileID: 1483448579}
   - {fileID: 1188839524}
   - {fileID: 1293740388}
   - {fileID: 35531011}
+  - {fileID: 911564689}
   - {fileID: 36398420}
   - {fileID: 1630382119}
+  - {fileID: 1060638118}
   - {fileID: 278615099}
   - {fileID: 1443542832}
   - {fileID: 2000195621}
+  - {fileID: 1518960404}
   - {fileID: 549608199}
-  - {fileID: 437831932}
-  - {fileID: 587305468}
   - {fileID: 1506108520}
   - {fileID: 1195824078}
-  - {fileID: 1951258220}
-  - {fileID: 40934198}
-  - {fileID: 1774693200}
-  - {fileID: 1037348143}
-  - {fileID: 1260957503}
-  - {fileID: 1162535668}
-  - {fileID: 272162763}
-  - {fileID: 1502568687}
-  - {fileID: 776726690}
-  - {fileID: 1362177307}
-  - {fileID: 3192725}
-  - {fileID: 360392194}
-  - {fileID: 1738251017}
-  - {fileID: 1860962085}
-  - {fileID: 1122298347}
-  - {fileID: 1317063659}
-  - {fileID: 942040486}
-  - {fileID: 1298671120}
-  - {fileID: 1300581375}
-  - {fileID: 1718187006}
-  - {fileID: 193255508}
-  - {fileID: 1055969783}
-  - {fileID: 1132698704}
-  - {fileID: 132426237}
-  - {fileID: 896009899}
-  - {fileID: 1991990177}
+  - {fileID: 345021002}
+  - {fileID: 178671146}
+  - {fileID: 614207596}
   - {fileID: 1188207613}
-  - {fileID: 1900564602}
+  - {fileID: 845288862}
+  - {fileID: 1260957503}
+  - {fileID: 1122298347}
+  - {fileID: 896009899}
+  - {fileID: 1401640134}
+  - {fileID: 437831932}
+  - {fileID: 587305468}
   - {fileID: 1971096451}
   - {fileID: 1986598748}
   - {fileID: 817633809}
-  - {fileID: 345021002}
+  - {fileID: 1900564602}
+  - {fileID: 40934198}
+  - {fileID: 1061479341}
   - {fileID: 1446630984}
+  - {fileID: 1451816437}
+  - {fileID: 1037348143}
   - {fileID: 2104528845}
   - {fileID: 1116619146}
-  - {fileID: 1901030796}
-  - {fileID: 1401640134}
+  - {fileID: 1951258220}
+  - {fileID: 1162535668}
+  - {fileID: 272162763}
+  - {fileID: 1774693200}
   - {fileID: 1410587381}
-  - {fileID: 2054670753}
-  - {fileID: 1451816437}
+  - {fileID: 1502568687}
+  - {fileID: 776726690}
+  - {fileID: 1317063659}
+  - {fileID: 1362177307}
   - {fileID: 2126417085}
-  - {fileID: 1622183332}
+  - {fileID: 3192725}
+  - {fileID: 2054670753}
+  - {fileID: 360392194}
   - {fileID: 1460096065}
+  - {fileID: 1901030796}
   - {fileID: 1291014494}
   - {fileID: 275437806}
+  - {fileID: 1622183332}
   - {fileID: 236951743}
-  - {fileID: 614207596}
-  - {fileID: 845288862}
-  - {fileID: 1369408894}
-  - {fileID: 1195707768}
-  - {fileID: 1152888944}
+  - {fileID: 942040486}
+  - {fileID: 1298671120}
+  - {fileID: 1738251017}
+  - {fileID: 1300581375}
+  - {fileID: 1718187006}
+  - {fileID: 193255508}
+  - {fileID: 1860962085}
+  - {fileID: 1055969783}
+  - {fileID: 1132698704}
+  - {fileID: 132426237}
   - {fileID: 2041747917}
-  - {fileID: 1061479341}
-  - {fileID: 1854197419}
-  - {fileID: 178671146}
   - {fileID: 889420363}
   - {fileID: 1242367163}
   - {fileID: 900515554}
   - {fileID: 1874556868}
   - {fileID: 1055532288}
   - {fileID: 858421027}
+  - {fileID: 1991990177}
   - {fileID: 972220505}
   - {fileID: 172086769}
   - {fileID: 1870708424}
@@ -5690,10 +5783,14 @@ Transform:
   - {fileID: 235297133}
   - {fileID: 583420175}
   - {fileID: 1457107394}
-  - {fileID: 1461344158}
-  - {fileID: 673920034}
   - {fileID: 1915772991}
   - {fileID: 574997254}
+  - {fileID: 1369408894}
+  - {fileID: 1195707768}
+  - {fileID: 1152888944}
+  - {fileID: 1854197419}
+  - {fileID: 1461344158}
+  - {fileID: 673920034}
   - {fileID: 609729626}
   - {fileID: 1345980455}
   - {fileID: 683079169}
@@ -8668,7 +8765,7 @@ Transform:
   m_LocalScale: {x: 40, y: 40, z: 40}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 34
+  m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 270}
 --- !u!1001 &1132698703
 PrefabInstance:
@@ -14628,7 +14725,7 @@ Transform:
   m_LocalScale: {x: 40, y: 40, z: 40}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 32
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 180.00002}
 --- !u!1001 &1915772990
 PrefabInstance:

@@ -12,6 +12,7 @@ public class ThunderStorm : MonoBehaviour
     private float InaccuracyCooldown;
     private float ActualCooldown;
     public PMovement PM;
+    AudioSource Sound;
     
     
     // Start is called before the first frame update
@@ -20,6 +21,7 @@ public class ThunderStorm : MonoBehaviour
         ActualCooldown = Cooldown;
         InaccuracyCooldown = Inaccuracy;
         PM = FindObjectOfType<PMovement>();
+        Sound = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -33,6 +35,10 @@ public class ThunderStorm : MonoBehaviour
             }
             if(ActualCooldown <= 0)
             {
+                if (Sound)
+                {
+                    Sound.Play();
+                }
                 GameObject player = GameObject.FindWithTag("Player");
                 Target = player.transform;
                 if(InaccuracyCooldown > 0)
