@@ -443,6 +443,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5833860671621936573}
   - component: {fileID: 5833860671631219267}
+  - component: {fileID: 158372505}
   m_Layer: 0
   m_Name: Petroleraa
   m_TagString: Untagged
@@ -485,6 +486,30 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &158372505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5833860671621704093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: baee2aab6f7c75d4e8e744c30b38b08e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DBuilding: {fileID: 0}
+  MaxHealth: 20
+  DefaultMat: {fileID: 0}
+  DamageMaterial: {fileID: 2100000, guid: 5792e0dcaec057742acfdb649ed4a700, type: 2}
+  Models:
+  - {fileID: 5833860671621704095}
+  Fire: {fileID: 0}
+  Reward: 35
+  PM: {fileID: 0}
+  DeathSystem: {fileID: 4524040305833974665, guid: c29a9e8724970824c8f1e53b00ca1f87,
+    type: 3}
+  MatTime: 0.09
 --- !u!1 &5833860671621704095
 GameObject:
   m_ObjectHideFlags: 0
@@ -495,6 +520,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5833860671621936575}
   - component: {fileID: 5833860671635367043}
+  - component: {fileID: 706187582}
   m_Layer: 0
   m_Name: Cube.005
   m_TagString: Untagged
@@ -573,3 +599,16 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.000054243952, y: 0.030014481, z: 0.000000007450581}
     m_Extent: {x: 0.051623937, y: 0.045741875, z: 0.018439924}
   m_DirtyAABB: 0
+--- !u!65 &706187582
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5833860671621704095}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.1857767, y: 30.031885, z: 2.1420836}
+  m_Center: {x: -0.22981316, y: 1.0338923, z: 0.000030050121}

@@ -12,7 +12,7 @@ public class Pause : MonoBehaviour
     void Start()
     {
         PSUI = GameObject.FindGameObjectsWithTag("PSUI");
-
+        gameIsPaused = false;
         for (int i = 0; i < PSUI.Length; i++)
         {
             PSUI[i].SetActive(false);
