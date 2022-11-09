@@ -35,19 +35,18 @@ public class Ammo : MonoBehaviour
                 Vector3 Contacto = col.contacts[0].point;
                 Instantiate(ExplodesOnImpact, Contacto, Quaternion.identity);
             }
-            
             Destroy(gameObject);
         }
     }
 
     void OnTriggerEnter(Collider col)
     {
-        if (gameObject.CompareTag("Ammo"))
+        
+        
+        if (col.gameObject.CompareTag("Player") && !gameObject.CompareTag("Ammo"))
         {
-            if (col.gameObject.CompareTag("Player"))
-            {
-                PM.ActualHP -= Damage;
-            }
+            PM.ActualHP -= Damage;
         }
+        
     }
 }
