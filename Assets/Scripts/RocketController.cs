@@ -44,7 +44,7 @@ public class RocketController : MonoBehaviour
 
     void OnCollisionEnter(Collision col)
     {
-        if (col.gameObject.tag != "Ammo" && col.gameObject.tag != "EnemyBullet" && col.gameObject.tag != "Rocket" && col.gameObject.tag != "GAU")
+        if (!col.gameObject.CompareTag("Ammo") && !col.gameObject.CompareTag("EnemyBullet") && !col.gameObject.CompareTag("Rocket") && !col.gameObject.CompareTag("GAU"))
         {
             
             Vector3 Contacto = col.contacts[0].point;
