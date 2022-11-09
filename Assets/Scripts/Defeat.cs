@@ -9,17 +9,20 @@ public class Defeat : MonoBehaviour
     [SerializeField] GameObject Camera;
     [SerializeField] GameObject Player;
     [SerializeField] GameObject[] DFUI;
+    [SerializeField] Pause PS;
     
     // Start is called before the first frame update
     void Start()
     {
         DFUI = GameObject.FindGameObjectsWithTag("DFUI");
         PM = FindObjectOfType<PMovement>();
+        PS = FindObjectOfType<Pause>();
         Player = GameObject.FindGameObjectWithTag("Player");
         for (int i = 0; i < DFUI.Length; i++)
         {
             DFUI[i].SetActive(false);
         }
+        
     }
 
     // Update is called once per frame
@@ -38,11 +41,13 @@ public class Defeat : MonoBehaviour
 
     public void RestartRun()
     {
+        PS.gameIsPaused = false;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public void BackToMenu()
     {
+        PS.gameIsPaused = false;
         SceneManager.LoadScene("Menu");
     }
 }

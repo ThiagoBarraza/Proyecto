@@ -37,14 +37,7 @@ public class PMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (PS.gameIsPaused)
-        {
-            
-        }
-        else
-        {
-            Model.SetActive(true);
-        }
+        
         
         if (ActualHP < 1)
         {

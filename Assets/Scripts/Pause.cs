@@ -13,10 +13,12 @@ public class Pause : MonoBehaviour
     {
         PSUI = GameObject.FindGameObjectsWithTag("PSUI");
         gameIsPaused = false;
+        Time.timeScale = 1;
         for (int i = 0; i < PSUI.Length; i++)
         {
             PSUI[i].SetActive(false);
         }
+        
     }
 
     // Update is called once per frame
