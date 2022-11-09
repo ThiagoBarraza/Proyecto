@@ -14,6 +14,8 @@ public class PMovement : MonoBehaviour
     public float ActualHP;
     public float MaxHP;
     [SerializeField] private float AddedRotation = 90;
+    [SerializeField] ParticleSystem[] Engines;
+    [SerializeField] bool HasEngines;
 
     public int Points = 0;
     public Text PointText;
@@ -57,13 +59,33 @@ public class PMovement : MonoBehaviour
         }
         else
         {
+            if (HasEngines)
+            {
+                if (!Input.GetKey(KeyCode.W))
+                {
+                    for (int i = 0; i < Engines.Length; i++)
+                    {
+                        Engines[i].Stop();
+                    }
+                }
+                if (Input.GetKey(KeyCode.W))
+                {
+                    for (int i = 0; i < Engines.Length; i++)
+                    {
+                        Engines[i].Play();
+                    }
+                }
+            }
+            
+            
             if (Input.GetKey(KeyCode.W))
             {
                 transform.Translate(0, 0, ZSpeed);
+                
             }
             if (Input.GetKey(KeyCode.S))
             {
-                transform.Translate(0, 0, -ZSpeed);
+                transform.Translate(0, 0, -XSpeed);
             }
             if (Input.GetKey(KeyCode.D))
             {

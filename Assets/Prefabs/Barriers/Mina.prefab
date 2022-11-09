@@ -822,7 +822,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a0fca614924fe743b3bb52967eedcff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DetoTime: 3
+  DetoTime: 300
   DeathSystem: {fileID: 6393267118740848351, guid: b886c371fe5eec24cb2f03e53c04ca9d,
     type: 3}
 --- !u!65 &3322277379635948323
