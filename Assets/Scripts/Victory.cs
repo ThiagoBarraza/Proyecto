@@ -14,6 +14,7 @@ public class Victory : MonoBehaviour
     Scene m_Scene;
     [SerializeField] Stage2data S2D;
     [SerializeField] Stage1data S1D;
+    AudioSource Sound;
 
     // Start is called before the first frame update
     void Start()
@@ -38,6 +39,11 @@ public class Victory : MonoBehaviour
             {
                 VUI[i].SetActive(true);
                 Ptxt.text = PM.PointText.text;
+                if (!Sound.isPlaying)
+                {
+                    Sound.Play();
+                }
+                
             }
         }
 

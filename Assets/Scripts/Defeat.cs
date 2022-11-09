@@ -11,6 +11,7 @@ public class Defeat : MonoBehaviour
     [SerializeField] GameObject[] DFUI;
     [SerializeField] Pause PS;
     
+    
     // Start is called before the first frame update
     void Start()
     {
