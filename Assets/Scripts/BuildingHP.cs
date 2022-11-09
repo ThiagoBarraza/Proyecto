@@ -60,10 +60,6 @@ public class BuildingHP : MonoBehaviour
         {
             DBuilding.SetActive(false);
         }
-        if (DeathSystem)
-        {
-            Instantiate(DeathSystem);
-        }
         ActualMatTime = MatTime;
         DefaultMat = Models[0].GetComponent<Renderer>().material;
     }
