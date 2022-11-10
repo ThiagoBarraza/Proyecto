@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Water : MonoBehaviour
+public class Water1 : MonoBehaviour
 {
     [SerializeField] Vector3 PosInicial;
 
