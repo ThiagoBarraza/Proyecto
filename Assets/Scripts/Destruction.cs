@@ -8,6 +8,7 @@ public class Destruction : MonoBehaviour
     [SerializeField] GameObject Trigg;
     [SerializeField] bool HasAudio;
     private AudioSource Sound;
+    
     private bool Played = false;
 
     // Update is called once per frame
@@ -21,8 +22,11 @@ public class Destruction : MonoBehaviour
     
     void Update()
     {
+
+
         if (!Trigg)
         {
+            
             Destroy(gameObject, Time);
             if (Sound && !Played)
             {
@@ -35,6 +39,7 @@ public class Destruction : MonoBehaviour
             if (!Trigg.activeInHierarchy)
             {
                 Destroy(gameObject);
+                
             }
         }
         

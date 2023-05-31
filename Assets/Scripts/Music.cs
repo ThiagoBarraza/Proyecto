@@ -5,7 +5,7 @@ using UnityEngine;
 public class Music : MonoBehaviour
 {
     [SerializeField]
-    private AudioSource Sound;
+    public GameObject Sound;
     
     // Start is called before the first frame update
     void Start()
@@ -21,13 +21,6 @@ public class Music : MonoBehaviour
 
     public void MuteMusic()
     {
-        if(Sound.mute == true)
-        {
-            Sound.mute = true;
-        }
-        else
-        {
-            Sound.mute = false;
-        }
+        Destroy(Sound);
     }
 }
