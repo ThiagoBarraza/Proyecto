@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8251170185273642351}
   - component: {fileID: 135940535556584696}
   - component: {fileID: 114999244160430910}
+  - component: {fileID: 114117701468571266}
   m_Layer: 0
   m_Name: Player Explosion 1
   m_TagString: Hammo
@@ -4826,7 +4827,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 3.5
+  m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &114999244160430910
 MonoBehaviour:
@@ -4843,3 +4844,15 @@ MonoBehaviour:
   Time: 3
   Trigg: {fileID: 0}
   HasAudio: 0
+--- !u!114 &114117701468571266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4524040305833974665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e1f95acf8ddf7f4f9ae69e1133c9241, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

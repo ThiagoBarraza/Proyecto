@@ -140,7 +140,7 @@ public class BuildingHP : MonoBehaviour
         {
             Health -= 15;
 
-            Debug.Log("Remaining health" + Health);
+            Debug.Log("Hit");
         }
     }
 }
