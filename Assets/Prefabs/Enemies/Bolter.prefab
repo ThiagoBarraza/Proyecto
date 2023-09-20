@@ -134,7 +134,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DBuilding: {fileID: 0}
-  MaxHealth: 30
+  MaxHealth: 20
   DefaultMat: {fileID: 0}
   DamageMaterial: {fileID: 2100000, guid: 38b52ac1e2fad0044a4d34fdbbd9d012, type: 2}
   Models:

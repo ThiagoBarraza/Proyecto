@@ -129,7 +129,7 @@ public class PMovement : MonoBehaviour
         switch (Tcolision)
         {
             case "Thunder":
-                ActualHP -= 3;
+                ActualHP -= 2;
                 break;
         }
     }
